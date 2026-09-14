@@ -1,0 +1,623 @@
+:root {
+    --bg-dark: #0c1017;
+    --bg-card: rgba(22, 29, 41, 0.75);
+    --bg-card-hover: rgba(30, 40, 58, 0.85);
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --border-accent: rgba(0, 212, 255, 0.35);
+    
+    --primary: #00d4ff;
+    --primary-glow: rgba(0, 212, 255, 0.25);
+    --secondary: #7928ca;
+    
+    --color-adhd: #ff9800;
+    --color-idd: #f43f5e;
+    --color-control: #10b981;
+    
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    --text-dim: #6b7280;
+    
+    --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at 10% 20%, #111827 0%, #0c1017 90%);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* App Header */
+.app-header {
+    background: rgba(12, 16, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 16px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.brand-text h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #fff, #9ca3af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-text .subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.header-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-tech {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.badge-status {
+    background: rgba(16, 185, 129, 0.12);
+    color: var(--color-control);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background: var(--color-control);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--color-control);
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 24px auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+/* Control Card */
+.control-card {
+    padding: 24px;
+}
+
+.panel-header {
+    margin-bottom: 20px;
+}
+
+.panel-header h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.panel-header p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.control-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) 1.2fr;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+}
+
+.val-pill {
+    background: rgba(0, 212, 255, 0.15);
+    color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.form-control {
+    background: rgba(12, 16, 23, 0.8);
+    border: 1px solid var(--border-glass);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: var(--font-main);
+    outline: none;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 12px var(--primary-glow);
+}
+
+.slider {
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.25s;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00d4ff, #0077ff);
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0 4px 16px rgba(0, 212, 255, 0.3);
+    flex: 1.2;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    border: 1px solid var(--border-glass);
+    flex: 1;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Workspace Layout */
+.workspace-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 24px;
+}
+
+.left-col, .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Card Structure */
+.card {
+    padding: 22px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-title h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-muted);
+}
+
+.tag-accent {
+    background: rgba(0, 212, 255, 0.12);
+    color: var(--primary);
+}
+
+.tag-paper {
+    background: rgba(121, 40, 202, 0.2);
+    color: #d8b4fe;
+    border: 1px solid rgba(121, 40, 202, 0.4);
+}
+
+.legend-pills {
+    display: flex;
+    gap: 6px;
+}
+
+.pill-ch {
+    font-size: 0.7rem;
+    font-family: var(--font-mono);
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--primary);
+}
+
+/* Canvas Container */
+.canvas-container {
+    background: rgba(10, 14, 20, 0.9);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 12px;
+    position: relative;
+}
+
+canvas {
+    width: 100% !important;
+    display: block;
+}
+
+/* Modes Grid */
+.modes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 440px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.modes-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modes-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+.mode-row {
+    background: rgba(10, 14, 20, 0.75);
+    border: 1px solid var(--border-glass);
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s;
+}
+
+.mode-row:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    background: rgba(15, 22, 32, 0.9);
+}
+
+.mode-meta {
+    min-width: 120px;
+}
+
+.mode-num {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.mode-freq {
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-family: var(--font-mono);
+}
+
+.mode-energy {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.mode-canvas-box {
+    flex: 1;
+    height: 48px;
+}
+
+.placeholder-state {
+    padding: 48px 20px;
+    text-align: center;
+    color: var(--text-dim);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.placeholder-state svg {
+    stroke: var(--text-dim);
+}
+
+/* Diagnostic Highlight Card */
+.highlight-card {
+    border: 1px solid var(--border-accent);
+    background: linear-gradient(145deg, rgba(22, 29, 41, 0.9) 0%, rgba(13, 27, 42, 0.8) 100%);
+}
+
+.diagnostic-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.diagnosis-badge {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.badge-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.badge-info .badge-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+}
+
+.badge-info h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 2px 0;
+}
+
+.badge-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Probabilities */
+.prob-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prob-section h4 {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.prob-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.prob-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 6px;
+}
+
+.fill-control { background: linear-gradient(90deg, #10b981, #34d399); }
+.fill-adhd { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.fill-idd { background: linear-gradient(90deg, #ef4444, #f87171); }
+
+/* Biomarkers Grid */
+.biomarkers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.biomarker-card {
+    background: rgba(10, 14, 20, 0.7);
+    border: 1px solid var(--border-glass);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bm-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.bm-val {
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: var(--font-mono);
+    color: var(--primary);
+}
+
+.bm-sub {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+}
+
+/* Paper Benchmark Runner */
+.paper-benchmarks {
+    padding: 24px;
+}
+
+.bench-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.experiment-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.btn-exp {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-glass);
+    color: #fff;
+    padding: 14px 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-exp:hover {
+    border-color: var(--primary);
+    background: rgba(0, 212, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.exp-output-box {
+    margin-top: 18px;
+    padding: 16px 20px;
+    background: rgba(10, 14, 20, 0.9);
+    border: 1px solid var(--border-glass);
+    border-radius: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border-glass);
+    margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+    .workspace-grid {
+        grid-template-columns: 1fr;
+    }
+    .control-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
