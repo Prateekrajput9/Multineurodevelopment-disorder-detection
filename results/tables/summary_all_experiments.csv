@@ -1,0 +1,5 @@
+experiment,title,n_segments,n_features_used,accuracy_ours,accuracy_paper,f1_ours,f1_paper,runtime_sec
+DS1_Rest,DS-1: IDD vs TDC (rest state),644,80,0.9968944099378882,1.0,0.9968943799851472,1.0,2733.85
+DS1_Music,DS-1: IDD vs TDC (music stimulus),644,47,0.9642857142857143,1.0,0.9642856281722063,1.0,2095.4
+DS1_RestMusic,DS-1: IDD vs TDC (rest + music combined),1288,103,0.9976708074534162,1.0,0.9976707948171568,1.0,5781.48
+DS2,DS-2: ADHD vs NC (visual attention task),6588,171,0.8580752884031573,0.9917,0.8578944640128583,0.9905,5117.28

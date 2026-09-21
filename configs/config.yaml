@@ -1,0 +1,304 @@
+# =============================================================================
+# EEG-Based Multiple Neurodevelopmental Disorders Detection
+# Configuration File
+# Paper: "Electroencephalogram-Based Unified Approach for Multiple
+#         Neurodevelopmental Disorders Detection in Children Using
+#         Successive Multivariate Variational Mode Decomposition"
+# Authors: Ujjawal Chandela, Kazi Newaj Faisal, Rishi Raj Sharma
+# IEEE Transactions on Cognitive and Developmental Systems, 2025
+# =============================================================================
+
+# ----- GLOBAL -----
+random_seed: 42          # [Paper does not specify this; implementation choice required]
+                          # Used for reproducibility of KNN, cross-validation splits
+
+# ----- DATASET PATHS -----
+paths:
+  # DS-1: IDD/TDC dataset (Mendeley)
+  # Actual location: idd/Data/CleanData/ (preprocessed .mat files, MODE B)
+  ds1_data_root: "idd/Data"                              # Root containing CleanData/ and RawData/
+  ds1_clean_idd: "idd/Data/CleanData/CleanData_IDD"     # MODE B: IDD preprocessed .mat files
+  ds1_clean_tdc: "idd/Data/CleanData/CleanData_TDC"     # MODE B: TDC preprocessed .mat files
+  ds1_raw_idd: "idd/Data/RawData/RawData_IDD"           # MODE A: IDD raw .set/.fdt files
+  ds1_raw_tdc: "idd/Data/RawData/RawData_TDC"           # MODE A: TDC raw .set/.fdt files
+
+  # DS-2: ADHD dataset (IEEE DataPort)
+  # Actual location: adhd/ (contains ADHD_part1.zip, ADHD_part2.zip, Control_part1.zip, Control_part2.zip)
+  ds2_adhd_dir: "adhd"                                  # Directory with ZIP files
+
+  # Output directories
+  ds1_processed: "data/processed/ds1"
+  ds2_processed: "data/processed/ds2"
+  metadata: "data/metadata"
+  results: "results"
+  logs: "results/logs"
+  plots: "results/plots"
+
+# ----- DATASET-1 (DS-1): IDD vs TDC -----
+ds1:
+  name: "IDD_Dataset"
+  source_doi: "10.17632/fshy54ypyh.1"       # Mendeley Data
+  source_ref: "[33] Sareen et al., Data in Brief, 2020"
+  n_subjects: 14
+  n_idd: 7
+  n_tdc: 7
+  n_channels: 14
+  sampling_freq: 128                          # Hz [Paper explicitly states 128 Hz]
+  recording_duration_sec: 120                 # 2 minutes per condition [Paper states 2 min]
+  conditions:
+    - "rest"
+    - "music"
+  channel_names:                              # EMOTIV EPOC+ 14-channel configuration
+    - "AF3"                                   # [Paper Fig. 2(a) - international 10-20]
+    - "F7"
+    - "F3"
+    - "FC5"
+    - "T7"
+    - "P7"
+    - "O1"
+    - "O2"
+    - "P8"
+    - "T8"
+    - "FC6"
+    - "F4"
+    - "F8"
+    - "AF4"
+  device: "EMOTIV EPOC+"
+  labels:
+    idd: 1
+    tdc: 0
+
+  # Preprocessing [Paper explicitly states these steps]
+  preprocessing:
+    # MODE A: Paper-described pipeline (requires EEGLAB - MATLAB only)
+    # MODE B: Use dataset's provided preprocessed recordings (DEFAULT)
+    mode: "B"                                 # Use preprocessed data provided with dataset
+    # Paper states: the dataset provides both raw and preprocessed EEG
+    # MODE B is default because it most closely corresponds to the paper's
+    # actual experimental input (authors likely used the preprocessed version)
+
+    # Bandpass filter [Paper explicitly: 1-30 Hz]
+    bandpass_low: 1.0
+    bandpass_high: 30.0
+
+    # Line noise removal [Paper explicitly: CleanLine plugin, 50/60 Hz]
+    line_noise_freq: [50, 60]
+
+    # ICA [Paper explicitly: EEGLAB runica, logistic infomax with natural gradient]
+    ica_method: "runica"                      # MATLAB EEGLAB only
+
+    # Artifact rejection [Paper explicitly: ADJUST plugin]
+    # Remove 2 most problematic ICs based on cumulative threshold exceedance for 5 features
+    n_artifact_ics_to_remove: 2
+
+  # Expected segment count [Paper explicitly states 1288 total]
+  expected_segments:
+    rest: 322                                 # IDD=161, TDC=161 [inferred from 322 IDD+322 TDC paper total]
+    music: 322
+    total: 1288                               # Paper explicitly: 322 IDD + 322 TDC (rest) + 322 IDD + 322 TDC (music)
+
+  # SMVMD parameters for DS-1 [Paper explicitly states]
+  smvmd:
+    alpha: 2000                               # [Paper: alpha=2000 for DS-1, bandwidth < 3 Hz]
+    tau: 0                                    # [Paper: tau=0 to avoid full reconstruction of noisy data]
+    tol: 1.0e-10                              # [Paper: convergence tolerance = 1e-10]
+    max_iter: 500                             # [Paper does not specify; implementation choice]
+    init_freq: "uniform"                      # [Paper does not specify; implementation choice]
+
+  # mRMR feature selection [Paper explicitly states]
+  mrmr:
+    n_features_rest: 80                       # [Paper explicitly: DS-1 Rest = 80]
+    n_features_music: 47                      # [Paper explicitly: DS-1 Music = 47]
+    n_features_rest_music: 103                # [Paper explicitly: DS-1 Rest+Music = 103]
+
+  # KNN hyperparameters [Paper Table II, explicitly stated]
+  knn:
+    rest:
+      n_neighbors: 2
+      distance: "cityblock"                   # [Paper: Cityblock]
+      weights: "uniform"                      # [Paper: Equal weighting]
+      standardize: true                       # [Paper: true for Rest]
+    music:
+      n_neighbors: 2
+      distance: "cityblock"                   # [Paper: Cityblock]
+      weights: "squared_inverse"              # [Paper: Squared Inverse]
+      standardize: false                      # [Paper: false for Music]
+    rest_music:
+      n_neighbors: 1
+      distance: "euclidean"                   # [Paper: Euclidean]
+      weights: "squared_inverse"              # [Paper: Squared Inverse]
+      standardize: true                       # [Paper: true for Rest+Music]
+
+# ----- DATASET-2 (DS-2): ADHD vs Normal Controls -----
+ds2:
+  name: "ADHD_Dataset"
+  source_doi: "10.21227/rzfh-zn36"           # IEEE DataPort
+  source_ref: "[35] Nasrabadi et al., IEEE DataPort, 2020"
+  n_subjects: 121
+  n_adhd: 61
+  n_nc: 60
+  n_channels: 19
+  sampling_freq: 128                          # Hz [Paper explicitly states 128 Hz]
+  age_range: [7, 12]
+  channel_names:                              # International 10-20, 19 channels
+    - "Fp1"                                   # [Paper Fig. 2(b)]
+    - "Fp2"
+    - "F3"
+    - "F4"
+    - "C3"
+    - "C4"
+    - "P3"
+    - "P4"
+    - "O1"
+    - "O2"
+    - "F7"
+    - "F8"
+    - "T3"
+    - "T4"
+    - "T5"
+    - "T6"
+    - "Fz"
+    - "Cz"
+    - "Pz"
+  labels:
+    adhd: 1
+    nc: 0
+
+  # Preprocessing [Paper explicitly states these steps]
+  preprocessing:
+    # Butterworth bandpass [Paper: 0.5-60 Hz]
+    bandpass_low: 0.5
+    bandpass_high: 60.0
+    butterworth_order: 4                      # [Paper does not specify order; implementation choice]
+
+    # Notch filter [Paper: 50 Hz]
+    notch_freq: 50.0
+    notch_quality: 30                         # [Paper does not specify Q; implementation choice]
+
+    # Wavelet filtering [Paper: Coiflet-3 wavelet]
+    wavelet: "coif3"                          # Coiflet-3 = coif3 in PyWavelets
+    wavelet_level: 6                          # [Paper explicitly: up to level 6]
+
+    # Denoising method [Paper: Stein's SURE]
+    denoising_method: "SURE"                  # Stein's Unbiased Risk Estimation
+
+  # Expected segment count [Paper explicitly states 6588 total]
+  expected_segments:
+    adhd: 3680                                # [Paper explicitly: 3680 ADHD]
+    nc: 2908                                  # [Paper explicitly: 2908 NC]
+    total: 6588                               # [Paper explicitly: 6588]
+
+  # SMVMD parameters for DS-2 [Paper explicitly states]
+  smvmd:
+    alpha: 1000                               # [Paper: alpha=1000 for DS-2, bandwidth < 4 Hz]
+    tau: 0                                    # [Paper: tau=0]
+    tol: 1.0e-10                              # [Paper: convergence tolerance = 1e-10]
+    max_iter: 500                             # [Paper does not specify; implementation choice]
+    init_freq: "uniform"                      # [Paper does not specify; implementation choice]
+
+  # mRMR feature selection [Paper explicitly states]
+  mrmr:
+    n_features: 171                           # [Paper explicitly: DS-2 = 171 (all features)]
+
+  # KNN hyperparameters [Paper Table II, explicitly stated]
+  knn:
+    n_neighbors: 2
+    distance: "cosine"                        # [Paper: Cosine]
+    weights: "squared_inverse"                # [Paper: Squared Inverse]
+    standardize: false                        # [Paper: false for DS-2]
+
+# ----- SEGMENTATION [Paper explicitly states] -----
+segmentation:
+  window_sec: 5                               # [Paper: 5-second windows]
+  overlap: 0.5                                # [Paper: 50% overlap]
+  # Derived:
+  window_samples: 640                         # = 5 * 128
+  step_samples: 320                           # = 640 * 0.5
+
+# ----- FEATURE EXTRACTION [Paper Table I explicitly] -----
+features:
+  names:
+    - "STD"                                   # Standard Deviation
+    - "VAR"                                   # Variance
+    - "RMS"                                   # Root Mean Square
+    - "IQR"                                   # Interquartile Range
+    - "ASSR"                                  # Absolute Summation of Square Root
+    - "AP"                                    # Average Power (modified periodogram)
+    - "MFL"                                   # Maximum Fractal Length
+    - "IP"                                    # Information Potential
+    - "PCC"                                   # Parametric-Centered Correntropy
+  n_features: 9
+
+  # AP feature parameters [Paper: Hamming window, modified periodogram]
+  ap:
+    window: "hamming"                         # [Paper explicitly: Hamming window]
+    # [Paper does not specify nfft; implementation choice]
+    nfft: null                                # None = use signal length
+
+  # IP and PCC parameters [Paper: Gaussian kernel]
+  kernel:
+    sigma: null                               # [Paper does not specify sigma; implementation choice]
+                                              # If null, use Silverman's rule
+
+  # PCC parameters [Paper: time delay l = 1]
+  pcc:
+    time_delay: 1                             # [Paper explicitly: l = 1]
+
+# ----- CLASSIFIER COMPARISON [Paper Table V] -----
+classifiers:
+  - "KNN"                                     # Primary (paper's chosen classifier)
+  - "DT"                                      # Decision Tree
+  - "SVM"                                     # Support Vector Machine
+  - "Ensemble"                                # Ensemble (paper uses bagged trees)
+
+# ----- BAYESIAN OPTIMIZATION [Paper explicitly states] -----
+bayesian_optimization:
+  n_iterations: 200                           # [Paper explicitly: 200 iterations]
+  cv_folds: 10                                # [Paper explicitly: 10-fold cross-validation]
+
+# ----- EVALUATION -----
+evaluation:
+  # Paper-style evaluation (segments as independent observations)
+  paper_style:
+    cv: "stratified_kfold"                    # 10-fold stratified
+    n_splits: 10
+    metrics:
+      ds1: ["accuracy", "precision", "recall", "f1"]
+      ds2: ["accuracy", "precision", "recall", "f1", "mcc", "kappa", "gdr", "gmean"]
+
+  # Subject-independent evaluation (methodological audit)
+  subject_independent:
+    cv: "stratified_group_kfold"              # Subjects do not leak across folds
+    n_splits: 10
+    note: "NOT a claim of reproducing the paper. Methodological robustness audit only."
+
+# ----- PIPELINE CONTROL -----
+pipeline:
+  # Staged processing flags
+  phase1_load_one_subject: true
+  phase2_one_segment: true
+  phase3_verify_smvmd: true
+  phase4_verify_features: true
+  phase5_verify_energy_integration: true
+  phase6_one_subject: true
+  phase7_five_subjects: false                 # Enable when phases 1-6 pass
+  phase8_full_dataset: true                   # Enable when phase 7 passes
+
+  # Intermediate saving
+  save_smvmd_results: true
+  save_feature_matrices: true
+  save_segment_metadata: true
+
+  # Verbosity
+  verbose: true
+  plot_diagnostics: true
+
+# ----- NUMERICAL TOLERANCES -----
+tolerances:
+  # With tau=0 the paper deliberately does NOT fully reconstruct the input
+  # ("tau is set at zero to avoid the full reconstruction of the noisy input
+  # data"), so a residual of a few percent is the intended behaviour, not a
+  # failure. This threshold flags a decomposition that has genuinely collapsed.
+  smvmd_reconstruction: 0.25                 # |x - sum(MIMFs)| / |x| < this
+  feature_nan_check: true
+  feature_inf_check: true

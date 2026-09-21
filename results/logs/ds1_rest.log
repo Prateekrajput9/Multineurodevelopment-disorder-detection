@@ -1,0 +1,156 @@
+2026-09-20 01:11:39 | DS1_Rest | INFO | DS-1 Rest Experiment: IDD vs TDC
+2026-09-20 01:11:39 | DS1_Rest | INFO | Paper target: 100% accuracy
+2026-09-20 01:11:39 | DS1_Rest | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 01:11:39 | DS1_Rest | INFO | Total segments: 644 (expected ~644)
+2026-09-20 12:58:11 | DS1_Rest | INFO | DS-1 Rest Experiment: IDD vs TDC
+2026-09-20 12:58:11 | DS1_Rest | INFO | Paper target: 100% accuracy
+2026-09-20 12:58:11 | DS1_Rest | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 12:58:11 | DS1_Rest | INFO | Total segments: 644 (expected ~644)
+2026-09-20 13:28:52 | DS1_Rest | INFO | DS-1 Rest Experiment: IDD vs TDC
+2026-09-20 13:28:52 | DS1_Rest | INFO | Paper target: 100% accuracy
+2026-09-20 13:28:52 | DS1_Rest | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 13:28:52 | DS1_Rest | INFO | Total segments: 644 (expected ~644)
+2026-09-20 13:37:30 | DS1_Rest | INFO | DS-1 Rest Experiment: IDD vs TDC
+2026-09-20 13:37:30 | DS1_Rest | INFO | Paper target: 100% accuracy
+2026-09-20 13:37:30 | DS1_Rest | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 13:37:30 | DS1_Rest | INFO | Total segments: 644 (expected ~644)
+2026-09-20 14:38:25 | DS1_Rest | INFO | DS-1 Rest Experiment: IDD vs TDC
+2026-09-20 14:38:25 | DS1_Rest | INFO | Paper target: 100% accuracy
+2026-09-20 14:38:25 | DS1_Rest | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 14:38:25 | DS1_Rest | INFO | Total segments: 644 (expected ~644)
+2026-09-20 22:43:39 | DS1_Rest | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 22:43:39 | DS1_Rest | INFO | Total segments: 644 (paper: 644)
+2026-09-20 23:00:58 | DS1_Rest | INFO | 
+============================================================
+DS-1 Rest (IDD vs TDC)
+  segments=644  features=126 -> mRMR keeps 80
+  KNN (paper Table II): {'n_neighbors': 2, 'distance': 'cityblock', 'weights': 'uniform', 'standardize': True}
+============================================================
+2026-09-20 23:05:01 | DS1_Rest | INFO | mRMR curve: empirical optimum=70 features (paper states 80 for this experiment)
+2026-09-20 23:29:13 | DS1_Rest | INFO | DS-1 Rest (IDD vs TDC) complete in 2733.8s

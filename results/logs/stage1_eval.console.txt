@@ -1,0 +1,52 @@
+2026-09-21 13:29:10 | Stage1 | INFO | ===== part: eval =====
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 13:30:50 | Stage1 | INFO | [DS1_Rest | smvmd_overlap50 | SEG10] seg acc=99.69%  subject vote acc=100.00% (14/14)  [100.2s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 13:30:52 | Stage1 | INFO | [DS1_Rest | smvmd_overlap50 | SEG10_GLOBAL] seg acc=99.69%  subject vote acc=100.00% (14/14)  [2.2s]
+2026-09-21 13:34:05 | Stage1 | INFO | [DS1_Rest | smvmd_overlap50 | SUBJ] seg acc=62.73%  subject vote acc=71.43% (10/14)  [192.7s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 13:36:11 | Stage1 | INFO | [DS1_Rest | smvmd_overlap0 | SEG10] seg acc=99.07%  subject vote acc=100.00% (14/14)  [126.3s]
+2026-09-21 13:39:57 | Stage1 | INFO | [DS1_Rest | smvmd_overlap0 | SUBJ] seg acc=63.66%  subject vote acc=64.29% (9/14)  [225.9s]
+2026-09-21 13:39:59 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Rest.pdf|png
+2026-09-21 13:39:59 | Stage1 | INFO | results_summary.json <- [protocols]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 13:42:49 | Stage1 | INFO | [DS1_Music | smvmd_overlap50 | SEG10] seg acc=96.43%  subject vote acc=100.00% (14/14)  [169.6s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 13:42:49 | Stage1 | INFO | [DS1_Music | smvmd_overlap50 | SEG10_GLOBAL] seg acc=94.10%  subject vote acc=100.00% (14/14)  [0.3s]
+2026-09-21 13:47:14 | Stage1 | INFO | [DS1_Music | smvmd_overlap50 | SUBJ] seg acc=43.01%  subject vote acc=57.14% (8/14)  [265.0s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 13:51:16 | Stage1 | INFO | [DS1_Music | smvmd_overlap0 | SEG10] seg acc=94.41%  subject vote acc=100.00% (14/14)  [241.8s]
+2026-09-21 13:55:07 | Stage1 | INFO | [DS1_Music | smvmd_overlap0 | SUBJ] seg acc=50.62%  subject vote acc=57.14% (8/14)  [231.2s]
+2026-09-21 13:55:08 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Music.pdf|png
+2026-09-21 13:55:08 | Stage1 | INFO | results_summary.json <- [protocols]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 14:00:15 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap50 | SEG10] seg acc=99.77%  subject vote acc=100.00% (14/14)  [306.2s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 14:00:15 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap50 | SEG10_GLOBAL] seg acc=99.77%  subject vote acc=100.00% (14/14)  [0.5s]
+2026-09-21 14:18:31 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap50 | SUBJ] seg acc=62.34%  subject vote acc=64.29% (9/14)  [1095.7s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 14:23:09 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap0 | SEG10] seg acc=99.22%  subject vote acc=100.00% (14/14)  [277.7s]
+2026-09-21 14:32:44 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap0 | SUBJ] seg acc=63.51%  subject vote acc=71.43% (10/14)  [575.3s]
+2026-09-21 14:32:50 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_RestMusic.pdf|png
+2026-09-21 14:32:50 | Stage1 | INFO | results_summary.json <- [protocols]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 14:32:52 | Stage1 | INFO | [DS2 | smvmd_overlap50 | SEG10] seg acc=85.81%  subject vote acc=100.00% (121/121)  [2.3s]
+2026-09-21 14:32:54 | Stage1 | INFO | [DS2 | smvmd_overlap50 | SUBJ] seg acc=57.54%  subject vote acc=61.16% (74/121)  [2.1s]
+C:\Users\Prateek\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py:885: UserWarning: The groups parameter is ignored by StratifiedKFold
+  warnings.warn(
+2026-09-21 14:32:55 | Stage1 | INFO | [DS2 | smvmd_overlap0 | SEG10] seg acc=74.86%  subject vote acc=90.08% (109/121)  [0.7s]
+2026-09-21 14:32:56 | Stage1 | INFO | [DS2 | smvmd_overlap0 | SUBJ] seg acc=58.04%  subject vote acc=65.29% (79/121)  [0.7s]
+2026-09-21 14:32:57 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS2.pdf|png
+2026-09-21 14:32:58 | Stage1 | INFO | results_summary.json <- [protocols]
+2026-09-21 14:32:58 | Stage1 | INFO | ===== part eval done in 3828s =====
+2026-09-21 14:32:58 | Stage1 | INFO | -> results\stage1\results_summary.md

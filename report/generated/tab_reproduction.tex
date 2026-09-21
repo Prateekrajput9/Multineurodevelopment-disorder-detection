@@ -1,0 +1,10 @@
+\begin{tabular}{lcccccl}
+\toprule
+Setting & Segments & Features & Accuracy & Precision & Recall & KNN (Table II of \cite{chandela2025})\\
+\midrule
+DS-1 Rest & 644 & 80 & 99.69\% & 99.69\% & 99.69\% & $k{=}2$, city-block, equal, std. \\
+DS-1 Music & 644 & 47 & 96.43\% & 96.43\% & 96.43\% & $k{=}2$, city-block, sq.\ inverse \\
+DS-1 Rest+Music & 1288 & 103 & 99.77\% & 99.77\% & 99.77\% & $k{=}1$, Euclidean, sq.\ inverse, std. \\
+DS-2 & 6588 & 171 & 85.81\% & 85.79\% & 85.81\% & $k{=}2$, cosine, sq.\ inverse \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,827 @@
+﻿Total pages: 10
+=== PAGE 1 ===
+1350 IEEETRANSACTIONSONCOGNITIVEANDDEVELOPMENTALSYSTEMS,VOL.17,NO.6,DECEMBER2025
+Electroencephalogram-Based Unified Approach for
+Multiple Neurodevelopmental Disorders Detection
+in Children Using Successive Multivariate
+Variational Mode Decomposition
+Ujjawal Chandela , Kazi Newaj Faisal , and Rishi Raj Sharma , Member, IEEE
+AbstractΓÇöEarly age identification and prompt intervention I. INTRODUCTION
+play a crucial role in mitigating the severity of neurodevelop-
+mental disorders in children. Traditional diagnostic approaches THE Centers for Disease Control and Prevention de-
+can be lengthy, but there is growing research potential in using finesdevelopmentaldisabilitiesasconditionsthatimpact
+electroencephalogram (EEG) signals to detect attention deficit learning, language, physical abilities, or behavioral aspects.
+hyperactivity disorder (ADHD) and intellectual developmental
+Among the different types of disabilities/disorders, neurode-
+disorder (IDD). By recording the electrical activity of the brain,
+velopmental disorders are cognitive impairments, linked to
+EEG has emerged as a promising technique for the early
+identification of these disorders. This research proposes a novel the functioning of the nervous system and brain [1]. These
+integrated method for identifying multiple neurodevelopmental circumstancesmayresultfromgeneticmutationsorabnormal-
+disorders from the EEG signals of children. The approach itiesinspecificbrainregionsduringdevelopment,leadingtoa
+combinessuccessivemultivariatevariationalmodedecomposition
+rangeofdifficultiesincognitive,social,andbehavioralaspects.
+(SMVMD) for analyzing multicomponent nonstationary signals
+Intellectualdevelopmentaldisorder(IDD)andattention-deficit
+and a machine learning (ML)-based classifier, addressing the
+issueofinconsistentnumbersofextractedfeaturesbyintroducing hyperactivity disorder (ADHD) are among the most prevalent
+an energy-based feature integration approach. By integrating neurodevelopmentaldisorders[2].IndividualswithIDDexhibit
+enhanced features from SMVMD with a K-nearest neighbor significant limitations in intellectual functioning and adaptive
+(KNN) classifier, the unified approach successfully detects two
+skillswhileindividualswithADHDhaveacontinuedtendency
+separate neurodevelopmental disorders from normal subjects.
+towardinattentionand/orhyperactivity-impulsivitythathinders
+The proposed method demonstrates perfect classification scores
+in detecting IDD under three different scenarios and achieves normalfunctioning [3].
+99.17%accuracyinclassifyingADHDsubjectsfromnormalsub- The detection of these neurodevelopmental disorders in-
+jects. Evaluation against different ML-based classifiers confirms volves a comprehensive approach, including psychological
+theeffectivenessoftheproposedfeatureextractionalgorithmand
+screening,clinicalassessment,anddiagnosticevaluations,often
+highlightsits superior performance compared torecent methods
+withthesupportofmultidisciplinaryteams.Onemethodisan-
+published on similar datasets.
+alyzingelectroencephalographysignalstocapturetheelectrical
+IndexTermsΓÇöAttentiondeficithyperactivitydisorder(ADHD),
+activityofbraininanoninvasivemanner[4],[5],[6],[7].Tradi-
+electroencephalogram(EEG),intellectualdevelopmentaldisorder
+tionallyemployedtodiagnoseandmanageepilepsy,thescope
+(IDD),machinelearning(ML),successivemultivariatevariational
+mode decomposition (SMVMD). of EEG has now broadened to encompass the investigation
+and identification of developmental disorders such as autism
+spectrumdisorder,IDD,andADHD,amongothers[8].Sareen
+etal.haveexaminedthefunctionalconnectivityofthebrainby
+using EEG electrodes on individuals with IDD and performed
+a comprehensive statistical analysis to investigate the impact
+ofmusic[9].Anwarhasextensivelyanalyzedvariousmachine
+Received 18 April 2024; revised 18 June 2024 and 2 November 2024; learning(ML)-basedclassifierswithdiscretewavelettransform
+accepted 5 March 2025. Date of publication 1 April 2025; date of current
+(DWT) coefficients as features for the detection of IDD from
+version10December2025.RecommendedforacceptancebyAssociateEditor
+Zhi-AnHuang.(Correspondingauthor:RishiRajSharma.) normally developed children [10]. In [11], scalograms gener-
+Ujjawal Chandela and Rishi Raj Sharma are with the Sensors and Signal ated by Morlet wavelet are utilized with a 3-D convolutional
+Intelligence Lab, Department of Electronics Engineering, Defence Institute
+neuralnetwork(CNN)toachieveahigheraccuracyindetecting
+of Advanced Technology, Pune 411025, India (e-mail: uujjawalchandela4@
+gmail.com;dr.rrsrrs@gmail.com). IDD.Breitenbachetal.conductedspectralanalysisontheEEG
+Kazi Newaj Faisal is with the Department of EECE, Military Institute signals to divide the power spectrum into numerous precise
+of Science and Technology, Dhaka 1216, Bangladesh (e-mail: newaj@
+frequency bands, which were subsequently classified using a
+eece.mist.ac.bd).
+DigitalObjectIdentifier10.1109/TCDS.2025.3556888 randomforest(RF)classifierforIDDdetection[12].Recently,
+2379-8939┬⌐2025IEEE.Allrightsreserved,includingrightsfortextanddatamining,andtrainingofartificialintelligenceandsimilartechnologies.
+Personaluseispermitted,butrepublication/redistributionrequiresIEEEpermission.Seehttps://www.ieee.org/publications/rights/index.htmlformoreinformation.
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 2 ===
+CHANDELAetal.:EEG-BASEDUNIFIEDAPPROACHFORMULTIPLENEURODEVELOPMENTALDISORDERSDETECTION 1351
+Shahetal.havedevelopedadeepneuralnetworkforthecortical EEG signals. The main contributions of the article are as
+sourcesignalsoftheregionsofinteresttoclassifyEEGsignals follows.
+todetectIDD[13]. 1) TothebestoftheauthorsΓÇÖknowledge,thisisthefirstwork
+FordetectingADHD,Vahidetal.[14]andAltinkaynaketal. toutilizeSMVMDfordetectinganyneurodevelopmental
+[15] utilized deep learning (DL) approaches to analyze event- disordersfromEEG signals.
+related EEG data for identifying ADHD in individuals. Addi- 2) A single unified approach is proposed for two different
+tionally,Chenetal.[16]involvedthereorganizationofchannel types of neurodevelopmental disorders (i.e., IDD and
+orderstoproposeanewconnectivitymatrixforDLusingCNN, ADHD) inchildren.
+whereas Moghaddari et al. [17] represented EEG signals as 3) A novel energy-based feature integration algorithm
+RGB images for classification through CNN models. Chang is proposed to overcome the difficulties in applying
+etal.[18]approachincorporatedLSTMnetworkstodistinguish ML/DL-based classifiers to the varying number of fea-
+ADHD in children, while Sharma et al. [19] introduced deep turesextracted fromvarying numbers of modes.
+expanded-EEGNetworkfeatureswithLSTMasaclassification 4) TheproposedmethodisevaluatedagainstdifferentML-
+tool. based classifiers and recent approaches on the same
+Various signal decomposition methods have proven to be a dataset for both IDD and ADHD detection, proving the
+powerful technique for EEG signal analysis, including ocular superiorityoftheproposed method.
+artifact removal [20], motor imagery [21], seizure detection The rest of the article is organized as follows. Section II
+[22], and emotion recognition [23]. The variational mode de- explains the proposed method and discusses the datasets used
+composition (VMD) is known for effectively addressing the for IDD and ADHD. In Section III, a detailed analysis of
+limitations of empirical mode decomposition (EMD) and em- the classification results for both IDD and ADHD detection is
+pirical wavelet transform by dynamically identifying relevant presented.SectionIVprovidesacomparativeassessmentofthe
+bands and concurrently estimating their modes to balance er- proposedmethodusingvariousML-basedclassifiersandrecent
+rors among them [24], [25]. However, the preselection of de- approachesonsimilardatasets.Finally,concludingremarksare
+composed modes for VMD hinders the natural decomposition provided inSectionV.
+of signals. To overcome this limitation, successive variational
+mode decomposition (SVMD) was proposed as an extension II. PROPOSEDMETHODANDDATASET
+ofVMDwithsequentialdecomposition.Itaimstoimprovethe
+The proposed method and considered datasets for IDD and
+accuracyandadaptabilityofsignaldecompositionacrossvari-
+ADHD detection are explained in the following sections. The
+oustypesofsignals[26],[27].Beingthemultivariateextension
+overall outline of the approach is presented in Fig. 1 with the
+ofSVMD,successivemultivariatevariationalmodedecompo-
+helpofablockdiagram.TherecordedmultivariateEEGsignals
+sition(SMVMD)isanadvancedmethodthatexpandsuponthe
+arepreprocessed,segmented,anddecomposedwithSMVMD.
+concepts of VMD and multivariate variational mode decom-
+Featuresarecomputed fromthedecomposed modes,followed
+position (MVMD) [28]. It provides a sophisticated approach
+byanenergy-basedfeatureintegrationalgorithmthatcombines
+fordecomposingandanalyzingcomplex,multivariatedatasets
+them.Finally,anML-basedclassifierisusedtoclassifytheEEG
+withmultiplevariablesorsimultaneousobservations.SMVMD
+signalsfordetectingIDDandADHD.Detailsofthedatasetsare
+preservestheinterrelatednatureofdifferentdatastreamsduring
+provided inthenext section.
+analysisandhighlightsthejointinformationavailablebetween
+channels.
+A. Dataset Description, Preprocessing and Windowing
+For the detection of ADHD from EEG signals, several re-
+searchers have focused on EMD with DWT [29], VMD [30], ThisstudymakesuseoftwodistinctsetsofdatatodetectIDD
+andmultivariateempiricalmodedecomposition(MEMD),mul- andADHDinchildren.Themethodforrecordingandprepro-
+tivariate empirical wavelet transform, and MVMD [31], [32]. cessing the EEG signals for both the datasets is elaborated in
+However,adaptivesignaldecompositionmethodshavenotbeen thenextsections.
+exploredforIDDdetectionfromEEG.Moreover,SMVMDhas 1) Dataset-1 (DS-1): The dataset DS-1 contains EEG
+not been utilized for any disorder detection system from EEG recordings from 14 individuals, encompassing seven partici-
+signals despite its ability to offer a sophisticated approach to pants with IDD and seven typical control individuals (TDC)
+signalanalysis,enablingtheadaptivedecompositionofsignals [33]. The EEG data were collected using a 14-channel dry
+andpotentiallyprovidinghigherresolutionofneuraloscillatory electrodeEMOTIVEPOC+deviceatasamplingfrequencyof
+activity due to its iterative nature. One of the main reasons 128 Hz for both rest periods and exposure to music stimuli,
+behindthisisthatSMVMDdecomposesthesignalintovarying eachlastingfor2min.Theelectrodesarepositionedaccording
+numbers of modes depending on the information available in totheinternational10ΓÇô20system.Channelconfigurationofthe
+it, which restricts the application of ML/DL-based classifiers device is presented in Fig. 2(a). Subsequently, the raw EEG
+duetoavariablenumberoffeaturesovermultipleobservations. data underwent filtering and preprocessing through EEGLAB
+Motivatedbythese,anovelunifiedapproachbasedonSMVMD software [34]. The raw EEG data underwent filtering using
+and an energy-based feature integration algorithm with a a band-pass filter with a lower cutoff at 1 Hz and an upper
+K-nearest neighbor (KNN) classifier is proposed in this cutoff at 30 Hz to reduce artifacts at epoch boundaries. The
+article for IDD and ADHD detection for children using ΓÇ£CleanLineΓÇ¥pluginwasutilizedtoeliminatelinenoiseof50/60
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 3 ===
+1352 IEEETRANSACTIONSONCOGNITIVEANDDEVELOPMENTALSYSTEMS,VOL.17,NO.6,DECEMBER2025
+Fig.1. OutlineoftheproposedmethodologyformultipledisorderdetectionfromEEGsignals.
+Hz.Toseparateandremoveartifacts,thedataweredecomposed between 5 and 16 characters. More details about the experi-
+intoindependentcomponents(ICs)throughtheimplementation mental paradigm are available in [35]. For preprocessing, the
+ofICsanalysisusingalogisticinfomaxalgorithmwithanatural recorded EEG signals were filtered using a Butterworth band-
+gradient feature in EEGLAB via the ΓÇ£runicaΓÇ¥ function. Arti- passfilterwitharangeof0.5ΓÇô60Hz.Thisfilteringprocessalso
+factswereautomaticallyidentifiedusingtheΓÇ£ADJUSTΓÇ¥plugin, eliminated high-frequency muscle artifacts caused by muscles
+which computed spatial and temporal features for each IC. atthebackoftheheadandrapideyemovements(65ΓÇô100Hz).
+Artifact classes included eye blinks, eye movements, and dis- To eliminate power line interference, a notch filter at 50 Hz
+continuities with specific temporal and spatial characteristics. wasapplied.Furthermore,waveletfilteringwithΓÇ£Coiflet3ΓÇ¥as
+ICs surpassing predefined thresholds for both sets of features the mother wavelet function was employed to remove ocular
+associatedwithanartifactclasswereclassified.Thetwomost noise. SteinΓÇÖs adaptive unbiased risk estimation technique was
+problematicICs,basedoncumulativethresholdexceedancefor utilizedfordenoisingbyremovingunwantedsignalcoefficients
+five features among identified artifacts, were then removed to up to the sixth level at a sampling rate of 128 Hz in this
+reconstruct artifact-free EEG data after filtration. More details study.
+aboutthedatasetareavailable in[33]. 3) Windowing-Based Segmentation: Segmenting lengthy
+2) Dataset-2(DS-2): TheADHDdatasetincludesEEGdata EEG signals is a widely used technique in EEG signal pro-
+from 60 typical developing normal control (NC) children and cessing [36]. It captures the rapid changes in brain activity
+61childrenwithADHD.Theparticipants,agedbetween7and and enables analysis to be conducted in short time intervals,
+12,consistedofbothboysandgirls[35].TheADHDdiagnosis maintaining high temporal accuracy [37]. This process is also
+was confirmed by an experienced psychiatrist based on DSM- essential for extracting features, facilitating the extraction of
+IV criteria, and the affected children had been taking Ritalin significantcharacteristicsfromindividualsegmentsoftheEEG
+foruptosixmonths.Noneofthecontrolgroupchildrenhada signal [38], [39]. In this study, preprocessed EEG data from
+historyofpsychiatricdisorders,epilepsy,oranyreportofhigh- bothdatasetsweresegmentedfor5sofwindowlengthwitha
+riskbehaviors.EEGrecordingswerecollectedusingastandard 50%overlapbetweeneachconsecutivewindow.Eachsegment
+placement of 19 electrodes following the international 10ΓÇô20 wasconsideredasanindependentobservationoftheiroriginal
+system,atasamplingrateof128Hz.Theelectrodeplacement categorization. This way 1288 EEG segments (322 IDD and
+mapfortheexperimentisshowninFig.2(b).Asvisualattention 322 TDC for rest and music state each) from DS-1 and 6588
+is one of the deficits in ADHD children, the EEG recording EEG segments (3680 ADHD and 2908 NC) from DS-2 were
+protocolincludedvisualattentiontaskswheretheywereasked extracted. These short EEG segments are labeled in the same
+to count cartoon characters displayed on large images ranging way astheircorresponding longEEGsignals.
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 4 ===
+CHANDELAetal.:EEG-BASEDUNIFIEDAPPROACHFORMULTIPLENEURODEVELOPMENTALDISORDERSDETECTION 1353
+allowsforthesimultaneousexaminationofmultipledatachan-
+nels,enabling theiterativeextraction ofmodes withoutneces-
+sitating prior knowledge regarding their number, even if there
+are variations in time delay or frequency modulation among
+different channels despite having the same center frequency.
+SMVMDseekstointegratechannelsintotheSVMDalgorithm
+andminimizethereconstructionerrorbyoptimizingthefollow-
+ingconstraint[24]:
+(cid:4) (cid:5) (cid:6)(cid:7) (cid:8) (cid:9) (cid:5)
+{uk } m ,{ i ╧ë n k },╬╗ ╬▒ (cid:2) k (cid:5) (cid:5) (cid:5)Γêé t (cid:10) ╬┤(t)+ ╧Ç j t Γêùu k (t) e ΓêÆ (cid:11) j╧ë (cid:12) kt (cid:5) (cid:5) (cid:5) 2 2
+(cid:2) (cid:2)
++ (cid:4)f(t)ΓêÆ u (t)(cid:4)2+ ╬╗(t),f(t)ΓêÆ u (t) (3)
+k 2 k
+k k
+where f(t) represents a real-valued input signal that is to
+be decomposed, ╬▒ is a regularization parameter to balance
+the compactness of MIMFs and the reconstruction error, ╬╗(t)
+is the Lagrangian multiplier, ╧ë is the center frequency of
+k
+the kth mode, [Γêù] denotes the convolution operation, Γêé () is
+t
+partial derivative with respect to time, and ╬┤(t) is the Dirac
+function.
+In SMVMD, the alternate direction method of multipliers
+is utilized to solve the minimization problem in (3) and the
+frequency response of x(t) taken as x╦å (╧ë), kth mode of cth
+c
+channelinfrequencydomain,u╦ån+1(╧ë),centerfrequencyofkth
+k,c
+mode,╧ën+1andtheLagrangianmultiplierofcthchannel,╬╗╦ån+1
+k c
+areupdated as follows:
+Fig.2. EEGelectrodemapfortherecordingof:(a)DS-1;and(b)DS-2. u╦ån k, + c 1(╧ë)= (cid:2) 1+╬▒2(╧ëΓêÆ x╦å ╧ë c( n ╧ë ) ) 4 + (cid:3)(cid:4) ╬▒ 1 2 + (╧ë 2╬▒ ΓêÆ ( ╧ë ╧ë k n ΓêÆ )4 ╧ë u╦å n n k ) ,c 2 ( + ╧ë (cid:5) )+ kΓêÆ ╬╗╦åc 1 2 (╧ë) 1 (cid:6)
+k k i=1 ╬▒2(╧ëΓêÆ╧ëi n)4
+B. SMVMD (4)
+MV
+Th
+M
+e
+D
+S
+.
+M
+It
+V
+u
+M
+ses
+D
+a
+t
+m
+ec
+u
+h
+l
+n
+ti
+i
+v
+q
+a
+u
+r
+e
+iat
+i
+e
+s
+m
+a
+o
+m
+d
+o
+u
+r
+la
+e
+te
+a
+d
+dv
+o
+a
+s
+n
+c
+c
+il
+e
+la
+d
+tio
+fo
+n
+rm
+mo
+o
+d
+f
+el
+th
+to
+e ╧ë
+k
+n+1= (cid:5) (cid:5)c
+c
+(cid:7) (cid:7)0 Γê₧
+0 Γê₧
+╧ë
+(cid:6) | u
+|
+╦å
+u╦å
+n k
+k n
+, + c
+, + c
+1(
+1
+╧ë
+(╧ë
+) |
+)
+2
+|2
+d
+d
+╧ë
+╧ë
+(cid:9)
+(5)
+accountforcorrelationamongmultipledatachannelsandcap- ╬╗╦ån+1=╬╗╦ån+╧ä x╦åc(╧ë)ΓêÆu╦å k n , + c 1(╧ë)+╬╗╦å 2 n c ΓêÆ ╬╗╦ån c (6)
+ture collective frequency components in all channels through c c 1+╬▒2(╧ëΓêÆ╧ën+1)4 2
+k
+iterative processes [28]. SMVMD decomposes a multicom-
+wherenisthenumberofiterationsand╧ä denotingthedualas-
+ponent nonstationary multichannel signal into K number of
+centupdatestep.TheproposedmethodinvolvesusingSMVMD
+band-limited multivariate intrinsic mode functions (MIMFs),
+u (t)ΓêêRC├ù1 from the C-channel input data, x(t). To extract tobreakdownthesegmentedsignalsintoavariablenumberof
+k MIMFs,depending ontheinformationcontained withinthem.
+u (t) successively, x(t) canbedecomposed intotwoparts
+k Specifically,everychannelofasinglesegmentisdecomposed
+intoanequalnumberofmodes.However,differentsegmentsof
+x(t)=u (t)+x (t) (1)
+k r thesameEEGsignalmaybebrokendownintovaryingnumber
+of modes. This is further explained with an example using a
+where u (t)isthekthMIMF.x (t) comprisesof twocompo-
+k r sample EEG signal. The time-domain representation of EEG
+nents and canbedefined asfollows:
+signalsforsubject ΓÇ£v8pΓÇ¥ fromtheADHD dataset ispresented
+K(cid:2)ΓêÆ1 in Fig. 3, where Fig. 3(a) and 3(b) depicts the first channel
+x (t)= u (t)+x (t) (2) of preprocessed and segmented signal for 5ΓÇô10 and 7.5ΓÇô12.5
+r i u
+s, respectively. The decomposed modes for these signals are
+i=1
+(cid:3) also shown in Fig. 4(a) and 4(b), respectively. From Fig. 4,
+where
+KΓêÆ1u
+(t) is the cumulative sum of the previously it can be seen that all channels of the 5ΓÇô10 s window of the
+i=1 i
+separated MIMFs and x (t) is the unprocessed part of the selectedlongEEGsignalhave5decomposedmodeswhilethe
+u
+signal,respectively. 7.5ΓÇô12.5 s window of the same long EEG signal has four de-
+UnlikeMVMD,SMVMDextractsMIMFsinsuccessionand composedmodesacrossallchannelsforidenticalinitialization
+enablesthesimultaneousexaminationofmultipledatachannels of SMVMD. This variable number of modes across different
+without requiring prior knowledge about their quantity. This observations creates a complexity for the application of ML
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 5 ===
+1354 IEEETRANSACTIONSONCOGNITIVEANDDEVELOPMENTALSYSTEMS,VOL.17,NO.6,DECEMBER2025
+TABLEI
+LISTOFFEATURESEXTRACTEDFROMEEGSIGNALSWITHTHEIR
+MATHEMATICALEXPRESSIONS
+Feature M(cid:2)athematicalExpression
+(cid:3)
+STD
+N
+1
+(cid:3)
+N
+i=1
+(xi ΓêÆ╬╝)2
+VAR N 1 (cid:2) N i=(cid:3)1 (xi ΓêÆ╬╝)2
+RMS 1 N x2
+N i=1 i
+IQR (cid:4)
+(cid:4)(cid:3)
+Q3 ΓêÆ
+ΓêÜ
+Q1 (cid:4)
+(cid:4)
+ASSR
+(cid:4)
+(cid:4) N
+i=1
+( xi)(cid:4)
+(cid:4)
+AP
+(cid:3)
+f
+╬ö
+N
+t (cid:4) (cid:4) (cid:3) N
+i=1
+wixieΓêÆj2╧Çf╬öti (cid:4) (cid:4) 2 ,
+whe(cid:5)re
+(cid:2)
+,ΓêÆ1/2╬öt<fΓëñ1/2╬öt(cid:6)
+(cid:3)
+MFL log
+10 i
+N
+=
+ΓêÆ
+1
+1(x
+(i+1)
+ΓêÆxi)2
+(cid:3) (cid:3)
+N
+1
+2
+N
+i=1
+N
+j=1
+K(xi(cid:5) ΓêÆxj)
+(cid:6)
+IP where,K
+(cid:7)
+(xi,xj)
+(cid:3)
+= ΓêÜ
+2
+1
+╧Ç╧â
+exp ΓêÆ(xi
+2
+ΓêÆ
+╧â
+x
+2
+j)2
+(cid:8)
+CC[l]= 1 N K(X[n]ΓêÆX[nΓêÆl])
+PCC (cid:7) (cid:3)NΓêÆl+(cid:3)1 n=l (cid:8)
+Fig. 3. Time-domain representation of preprocessed and segmented EEG ΓêÆ 1 N N K(X[n]ΓêÆX[nΓêÆl])
+signalsforsubjectΓÇ£v8pΓÇ¥fromADHDdatasetfortwowindows:(a)5ΓÇô10s; N2 l=1 n=l
+and(b)7.5ΓÇô12.5s.
+Note:Todefinethefeatures,asignalxhavingN numberofsampleswith
+╬╝meanisconsidered,where,xi representstheithsampleofx.╬ötisthe
+samplingperiodandwrepresentsaHammingwindowhavingNnumberof
+samples. Q3 and Q1 denotes the 75% and 25% percentile, respectively. l
+representsthetimedelaywhichisconsideredas1.
+expressions. These features provide valuable insights into
+the analyzed EEG signals. Standard deviation (STD) helps
+to identify irregularities or sudden changes in the EEG
+waveform. Variance (VAR) captures both short-term and
+long-termvariationsinEEGandisvaluablefordistinguishing
+different brain states. Root mean square (RMS) reflects the
+overall magnitude of the signal and is useful for assessing
+signal power or energy, which may indicate the level of brain
+activity. Interquartile range (IQR) captures the central half of
+the data and is resilient to outliers, which helps to identify
+variations within a specific range. The absolute value of the
+summationofthesquareroot(ASSR)providesinformationfor
+characterizing signal complexity and may highlight specific
+frequency components.
+Average power (AP) is a measure of the energy content in
+anEEGsignal.Itiscomputedusingthemodifiedperiodogram
+technique, which estimates the power spectral density. This
+involves multiplying the input EEG time series by a non-
+negative window function to reduce leakage at the beginning
+Fig. 4. Decomposed modes for the EEG signals shown in Fig. 3 by and end points. Maximum fractal length (MFL) captures the
+SMVMDfortwowindows:(a)5ΓÇô10s;and(b)7.5ΓÇô12.5s. scale-dependent complexity of EEG signals and reflects how
+the signal behaves at different resolutions, which helps detect
+smallchangesinEEG.Informationpotential(IP)measuresthe
+algorithmsasseparateobservationswillhavedifferentnumbers
+amount of information contained in a signal which is helpful
+offeatures.
+to capture the complexity and unique patterns within EEG
+signals. Parametric-centered correntropy (PCC) measures the
+C. Feature Extraction
+similarity between two EEG time series signals providing in-
+Several statistical, nonlinear, entropy, and information sightsintotheinteractionsanddependenciesbetweendifferent
+theoretic-based features are calculated for the segmented EEGrhythms,whichhelpstodiscriminatenormalbrainactiv-
+signals. These properties play a key role in categorizing ity from pathological conditions. All these features are taken
+the signals into different classes. The features utilized in from information-theoretic learning (ITL) toolbox [40], EEG
+this article are outlined in Table I with their mathematical toolbox [41], and electromyography (EMG) toolbox [42] and
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 6 ===
+CHANDELAetal.:EEG-BASEDUNIFIEDAPPROACHFORMULTIPLENEURODEVELOPMENTALDISORDERSDETECTION 1355
+were computed using the decomposed modes of each channel boundaries. It is often used as a benchmark for comparing
+withinthesegmented EEGsignals. morecomplexalgorithmsduetoitseaseofunderstandingand
+implementation.
+D. Energy-Based Feature Integration Bayesian optimization optimizes models sequentially using
+probabilisticmodelstofindthemosteffectivehyperparameters.
+As presented in Section II-B, the SMVMD method decom-
+It is popular to identify the best hyperparameter values effi-
+posesdifferentsegmentsofEEGsignalsintodifferentnumbers
+cientlybybuildingastatisticalmodelofthetargetfunctionand
+ofmodesorMIMFs.Hence,avaryingnumberoffeatureswill
+guidinginitialassessments,adjustingthemodelbasedonthese
+beobtainedforindividualEEGsignalsafterfeatureextraction.
+assessments, and repeating this process until finding the most
+Applyingclassificationinthisscenariomaynotbeappropriate
+effectivehyperparameters.Bayesianoptimizationoffersseveral
+because most ML algorithms require a consistent number of
+benefitscomparedtoothermethodsfortuninghyperparameters
+features for all data points. Diverse feature dimensions can
+[44]. It operates sequentially, reducing the time required by
+posechallengeswhenimplementingstandardalgorithms,often
+avoidingtheevaluationofallpotentialhyperparametervalues.
+requiring more complex data manipulation and computational
+Moreover, it incorporates a probabilistic approach that takes
+procedures [43]. This could lead to increased computational
+into account the uncertainty in the objective function, leading
+costs and longer training and inference times. In addressing
+toimprovedaccuracyformodelswithnoisyobjectives.Inthis
+these challenges, one potential method involves integrating
+researchstudy,theBayesianoptimizationalgorithmfromMAT-
+extracted features from various MIMFs through energy-based
+LAB R2023aΓÇÖs Classification Learner tool is used to optimize
+integrationusingtheenergy-weightedapproach,asthismethod
+aKNNclassifier withatenfoldcross-validationscheme.
+generatesacomprehensivefeaturerepresentationforeachchan-
+nel ofthesignal.
+Inthisstudy,anovelmethodofenergy-basedfeatureintegra-
+III. EXPERIMENTALRESULTS
+tionisutilizedwhichinvolvescombiningtheextractedfeatures
+fromMIMFsofthesamechanneltogetherthroughanenergy- A. Initial Experimental Setup
+weighted approach. This method results in a comprehensive
+ForinitializingtheSMVMDforDS-1,╬▒issetat2000sothat
+featurerepresentationforeachchanneloftheinitialsignal.The
+themaximumfrequencybandwidthforalldecomposedmodes
+energy-based feature integration approach is implemented as
+is less than 3 Hz could be achieved [28]. To avoid the full
+follows:
+reconstruction of the noisy input data during decomposition,
+f = (f c,m,1 ├ùe c,1 )+(f c,m,2 ├ùe c,2 )+...+(f c,m,n ├ùe c,n ) dualascentupdatestep,╧ä issetatzero[45].Also,tolerancesfor
+c,m e +e +...e theconvergencecriteriaaresetto10ΓêÆ10.FordecomposingDS-
+c,1 c,2 c,n
+(7) 2usingSMVMD,avalueof1000isassignedto╬▒toensurethat
+themaximumfrequencybandwidthforalldecomposedmodes
+where f is the mth feature of cth channel, f denotes
+c,m c,m,n
+remains below 4 Hz [28]. ╧ä and the tolerance values remain
+the mth feature from nth decomposed mode of cth channel,
+the same for DS-1 and DS-2. After extracting the integrated
+ande representstheenergyofthenthdecomposedmodeof
+c,n
+features from the decomposed modes, the features are ranked
+cthchannel. Inthisway,adefinitive andconsistentnumber of
+using maximum relevance minimum redundancy (mRMR) al-
+features could be obtained for each channel of the considered
+gorithm.Classificationaccuracyfortherankedfeaturesisthen
+signal.
+computed,andthemaximumaccuracyforthelowestnumberof
+featuresisselectedasshowninFig.5.Theselectednumberof
+E. Classifier Details and Optimization
+featuresare:DS-1(Music)ΓÇö47,DS-1(Rest)ΓÇö80,DS-1(Rest
+TheKNNalgorithmisapopularsupervisedMLmethodused & Music)ΓÇö103, and DS-2ΓÇö171. For the Bayesian optimiza-
+for classification and regression. It predicts the label of a new tion algorithm, 200 iterations are adopted for optimizing the
+data point by considering the labels of its closest neighbors KNNclassifierforallexperimentswithtenfoldcrossvalidation.
+in the training dataset. The symbol ΓÇ£KΓÇ¥ in the KNN algo- TheoptimizedhyperparameterKNNclassifierforbothdatasets
+rithm represents the number of nearest neighbors considered is listed in Table II. To assess the overall model performance,
+bythemodelformakingpredictions.Theidentificationofthese we computed accuracy as the ratio of correct predictions to
+close neighbors involves measuring the distance between data total predictions (8). Precision quantified the accuracy of pos-
+points.Determiningthisvalueisacrucialhyperparameterand itive predictions (9). Recall evaluated the capability of model
+is typically determined through cross validation. Furthermore, to accurately identify EEG signals, defined as the fraction of
+KNN is also valued for its ease and the simplicity of its im- actual positive instances that were predicted as positive (10).
+plementation. It operates without a dedicated training phase, The F1-score is particularly useful when balancing precision
+makingitanonparametricandinstance-basedlearningmethod. and recall is crucial, especially in scenarios with imbalanced
+Italsoremainseffectivewhendealingwithnoisytrainingdata classdistributions.Itrepresentstheharmonicmeanofprecision
+and largedatasets. The algorithmΓÇÖs performance relies heavily andrecall,effectivelyprovidingacompromisebetweenthetwo
+on the quality of the data and the suitability of features used (11). In the relevant equations, TP and TN denote the number
+for distance calculations. Despite its simplicity, KNN can be of true positive and negative cases, respectively, while FP and
+quite efficient, especially in situations with nonlinear decision FN denote the number of false positive and negative cases,
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 7 ===
+1356 IEEETRANSACTIONSONCOGNITIVEANDDEVELOPMENTALSYSTEMS,VOL.17,NO.6,DECEMBER2025
+TABLEIV
+CLASSIFICATIONRESULTSADHDIDENTIFICATION(DS-2)USING
+THEPROPOSEDAPPROACH
+PerformanceIndices Score Confusion Matrix
+Accuracy 99.17%
+Precision 99.04%
+Recall 99.07%
+F1-score 99.05%
+TABLEV
+PERFORMANCECOMPARISONBETWEENVARIOUSCLASSIFIERS
+Accuracy F1-Score Testing Model
+Dataset Classifier
+(%) (%) Time(ms) Size(MB)
+Fig. 5. Accuracy achieved for different numbers of ranked features by DT 93.48 93.52 0.368 0.025
+mRMR algorithm for: (a) DS-1 (Music); (b) DS-1 (Rest); (c) DS-1 (Rest DS-1 KNN 100 100 0.589 0.687
+&Music);and(d)DS-2classification. (Rest) SVM 99.84 99.84 0.317 0.118
+Ensemble 99.53 99.53 1.940 6.461
+DT 93.48 93.42 0.206 0.025
+DS-1 KNN 100 100 0.404 0.685
+TABLEII
+(Music) SVM 99.69 99.69 0.160 0.099
+OPTIMIZEDHYPERPARAMETERSFORDS-1ANDDS-2
+Ensemble 99.84 99.84 1.171 5.082
+USINGKNNCLASSIFIER
+DT 94.64 94.62 0.158 0.027
+DS-1
+Dataset NC Me D a i s s u ta re n m ce ent W Di e s i t g a h n t c e e d Stan D d a a t r a dize ( m Re u s s t ic & ) S K V N M N 9 1 9 0 .9 0 2 9 1 9 0 .9 0 2 0 0 . . 2 0 3 8 1 7 1 0 . . 3 1 5 2 1 9
+Ensemble 99.92 99.92 2.078 19.60
+R 2 Cityblock Equal true
+DS-1 M 2 Cityblock Squaredinverse false DT 84.82 82.28 0.041 0.096
+R+M 1 Euclidean Squaredinverse true DS-2 KNN 99.17 99.05 0.428 9.19
+SVM 97.77 97.47 0.128 5.517
+DS-2 2 Cosine Squaredinverse false
+Ensemble 96.98 96.53 0.468 32.05
+Note:R:Reststate,M:Musicstimuli,andNC:Neighborscount.
+TABLEVI
+COMPARATIVEANALYSISFORTHERESULTSOFIDDDETECTION
+TABLEIII (DS-1)WITHRECENTAPPROACHESONTHESAMEDATASET
+CLASSIFICATIONRESULTSFORIDDIDENTIFICATION(DS-1)USINGTHE
+PROPOSEDAPPROACH CV/ Accuracy(%)
+Method Year
+train:test R M R+M
+PerformanceIndices Rest Music Rest&Music DWT+QDA[10] 2020 7-foldCV 91.90 92.60 ΓÇô
+Accuracy 100% 100% 100% Spectralfeatures
+Precision 100% 100% 100% +RF[12] 2021 7-foldCV 91.67 ΓÇô ΓÇô
+Recall 100% 100% 100% Scalogram+CNN[11] 2021 71:29 98.87 99.85 ΓÇô
+F1-score 100% 100% 100% Deepneural 70:30 98.31 99.90 ΓÇô
+2023
+network(ETSNet)[13] 7-foldCV 98.47 99.45 ΓÇô
+ProposedMethod 2024 10-foldCV 100 100 100
+Note:DWT:Discretewavelettransform,QDA:Quadraticdiscriminant
+analysis,RF:Randomforest,ETSNet:EEGTemporalSpatialNetwork,
+andCV:Cross-validation.
+TP
+Precision= (9)
+TP+FP
+TP
+Recall= (10)
+TP+FN
+2├ùPrecision├ùRecall
+Fig.6. ConfusionmatricesforIDDidentification(DS-1)incaseof:(a)rest
+F1-score= . (11)
+state;(b)musicstimuli;and(c)combinationofboth. Precision+Recall
+respectively, B. Classification Results for IDD Identification
+TP+TN A comprehensive analysis of the classification outcomes,
+Accuracy= (8)
+TP+FP+TN+FN encompassing accuracy, precision, recall, and F1-score is
+outlined in Table III, showcasing the effectiveness of the
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 8 ===
+CHANDELAetal.:EEG-BASEDUNIFIEDAPPROACHFORMULTIPLENEURODEVELOPMENTALDISORDERSDETECTION 1357
+TABLEVII
+COMPARATIVEANALYSISFORTHERESULTSOFADHDDETECTION(DS-2)WITHRECENTAPPROACHESONTHESAMEANDOTHERDATASET
+Reference Year Database ExtractedFeatures Classifier Accuracy(%)
+Vahidetal.[14] 2019 ADHD=100,NC=44 Deeplearningfeatures EEGNet 83.00
+Chenetal.[16] 2019 ADHD=50,NC=51 Time-frequncydomain DeepCNN 94.67
+Altinkaynaketal.[15] 2020 ADHD=23,NC=23 Morphological,nonlinearandwaveletfeatures MLP 91.30
+Moghaddarietal.[17] 2020 ADHD=31,NC=30 Spectrogramimage-basedfeatures DeepCNN 98.48
+Changetal.[18] 2022 ADHD=30,NC=30 EEGband-basedfeatures DeepLSTM 90.50
+├ûKasim[32] 2023 ADHD=61,NC=60 Multitaper+MVMD-basedfeatures CNNandBi-LSTM 95.54
+Esasetal.[30] 2023 ADHD=61,NC=60 RLMD+VMD-basedfeatures DeepCNN 95.24
+Sharmaetal.[31] 2023 ADHD=61,NC=60 MEMD+geneticalgorithm ANN 96.16
+Time-frequencymeanenergies SVMwithRBF 99.06
+Sharmaetal.[19] 2023 ADHD=61,NC=60
+Deepexpanded-EEGNetworkfeatures LSTM 99.14
+Chauhanetal.[48] 2024 ADHD=61,NC=60 Mutualinformationbasedfeatures Stackedclassfier 92.00
+Proposedmethod 2024 ADHD=61,NC=60 SMVMD+statisticalandnonlinearfeatures KNN 99.17
+Note:LE:Lyapunovexponent,FD:Fractaldimensions,MLP:Multilayerperceptron,CNN:Convolutionalneuralnetwork,LSTM:Longshort-term
+memory,RLMD:Robustlocalmeandecomposition,ANN:Artificialneuralnetwork,andRBF:Radialbasisfunction.
+classification model on the DS-1 dataset. The proposed ap- comparativeanalysisispresentedinTableVI.Uponreviewing
+proachcouldachieveaperfectclassificationscoreof100%for the comparison, it is evident the proposed approach has out-
+allthreeconsiderations(reststate,musicstimuli,andcombina- performed recent approaches by achieving a 100% accuracy
+tionofboth).Theclassificationoutcomecanalsobevalidated in distinguishing between IDD and TDC subjects even with
+through confusion matrices for three scenarios presented in tenfoldcrossvalidation.
+Fig.6. ResultsoftheproposedmethodforDS-2arealsocompared
+with multiple recent studies that concentrated on the same
+datasetandareshowninTableVII.Afterexaminingthecom-
+C. Classification Results for ADHD Detection
+parison, it is clear that the proposed method has successfully
+A detailed examination of the categorization outcomes, en-
+outperformedrecentapproachesbyachieving99.17%accuracy
+compassing accuracy, precision, recall, and F1-score is show-
+in differentiating between ADHD and NC subjects even with
+cased in Table IV, illustrating the performance of the classifi-
+tenfold cross validation. The SMVMD technique decomposes
+cationmodelontheDS-2dataset.Thenewapproachexhibited
+complexsignalsintosimplercomponentstoanalyzemultivari-
+outstanding performance in terms of classifying ADHD and
+ate nonstationary signals. Meanwhile, ML focuses on devel-
+NC accurately. Furthermore, confirmation of the classification
+oping algorithms for making predictions or decisions based
+resultscanbecarriedoutusingtheconfusionmatrixdisplayed
+on data. Integrating SMVMD with ML is challenging due to
+inTableIV.DuetotheimbalanceintheDS-2dataset,Matthews
+differingfeaturesetsusedforlearningfromdifferentgenerated
+correlation coefficient (MCC), CohenΓÇÖs kappa, good detection
+modes.Theproposedapproachaimstomergethesetechniques
+rate(GDR)[46],andg-mean[47]werecalculated.Thevalues
+byleveragingSMVMDforenhancedfeatureextractionandML
+ofMCC,CohenΓÇÖsKappa,GDR,andg-meanwere0.983,0.983,
+for improved signal classification, combining a unique feature
+99.239, and 0.9915, respectively, which indicates the superior
+fromallmodeswithinthesamechannelusingenergy-weighted
+performance of the proposed method in handling unbalanced
+averaging.Thisapproachallowsforanalyzingandcategorizing
+data forclassification.
+datasets based on the distinctive features extracted from each
+signalmode.Themethodcombinesthedecompositioncapabil-
+IV. DISCUSSION ityofSMVMDwiththeclassificationexpertiseofML,leading
+toimprovedoutcomesinclassifyingdisordersamongchildren
+A. Comparison With Different ML-Based Classifiers
+compared toprevious findings.
+Evaluation of the proposed method for both datasets using The proposed method was able to mitigate the gap between
+variousML-basedclassifiermodelssuchasdecisiontree(DT), adaptivesignaldecompositiontechniquesuchasSMVMDand
+supportvectormachine(SVM),KNN,andensemble,enhanced MLalgorithmstoachievebetteraccuracies.However,thelim-
+with Bayesian optimization algorithm over 200 iterations is itationsoftheproposedmethodologyaresettingtheinitializa-
+shown in Table V. Efficiency of the proposed features is evi- tionparameters(╬▒,╧ä).Theseparametersarecrucialforproper
+dent as it can achieve significant accuracy across all classifier decompositionofsignalswhichinturnmightaffecttheclassi-
+models. This also highlights the efficacy of the energy-based fication performances.
+feature integration method in combining a varying number of
+features forML-basedclassification. V. CONCLUSION
+Anovelunifiedapproachisproposedfordetectingmultiple
+B. Comparison With Recent Approaches
+disorders from EEG signals of children using SMVMD and
+ForDS-1,theoutcomeoftheproposedapproachiscompared an ML-based classifier in this study. Analyzing multicompo-
+withseveralrecentstudiesthatfocusedonthesamedataset.The nent nonstationary signals such as EEG can be challenging.
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 9 ===
+1358 IEEETRANSACTIONSONCOGNITIVEANDDEVELOPMENTALSYSTEMS,VOL.17,NO.6,DECEMBER2025
+SMVMD is a useful tool for decomposing multivariate EEG [12] J. Breitenbach, D. Raab, E. Fezer, D. Sauter, H. Baumgartl, and
+intomultipleMIMFs.However,thevaryingnumberofdecom- R. Buettner, ΓÇ£Automatic diagnosis of intellectual and developmental
+disorderusingmachinelearningbasedonresting-stateEEGrecordings,ΓÇ¥
+posedMIMFsmakesitdifficulttoapplyanML-basedclassifier
+in Proc. 17th Int. Conf. Wireless Mobile Comput., Netw. Commun.
+duetoinconsistentfeatureextractionfromeachobservation.To (WiMob),Piscataway,NJ,USA:IEEE,2021,pp.7ΓÇô12.
+overcome this challenge, an energy-based feature integration [13] S. J. H. Shah, A. Albishri, S. S. Kang, Y. Lee, S. R. Sponheim, and
+M. Shim, ΓÇ£ETSNet: A deep neural network for EEG-based temporalΓÇô
+algorithmisintroducedinthisarticle.BycombiningSMVMD-
+spatialpatternrecognitioninpsychiatricdisorderandemotionaldistress
+based enhanced features and a KNN classifier, a unified ap- classification,ΓÇ¥Comput.Biol.Med.,vol.158,2023,Art.no.106857.
+proachisdevelopedtodetecttwoseparatechilddisorders(i.e., [14] A. Vahid, A. Bluschke, V. Roessner, S. Stober, and C. Beste, ΓÇ£Deep
+learningbasedonevent-relatedEEGdifferentiateschildrenwithADHD
+IDDandADHD)fromnormalsubjects.Theproposedapproach
+fromhealthycontrols,ΓÇ¥J.Clin.Med.,vol.8,no.7,2019,Art.no.1055.
+couldachieveaperfectclassificationscoreinthecaseofdetect- [15] M. Alt╦Öinkaynak et al., ΓÇ£Diagnosis of attention deficit hyperactivity
+ing IDD in three different scenarios (rest state, music stimuli, disorder with combined time and frequency features,ΓÇ¥ Biocybernetics
+and a combination of both). The proposed method has also Biomed.Eng.,vol.40,no.3,pp.927ΓÇô937,2020.
+[16] H.Chen,Y.Song,andX.Li,ΓÇ£Adeeplearningframeworkforidentifying
+successfully classified ADHD subjects from normal subjects
+children with ADHD using an EEG-based brain network,ΓÇ¥ Neurocom-
+withanaccuracy of 99.17%. puting,vol.356,pp.83ΓÇô96,2019.
+The proposed feature extraction algorithm was evaluated [17] M. Moghaddari, M. Z. Lighvan, and S. Danishvar, ΓÇ£Diagnose ADHD
+disorder in children using convolutional neural network based on con-
+withvariousML-basedclassifiersanddemonstratedsignificant
+tinuous mental task EEG,ΓÇ¥ Comput. Methods Programs Biomed., vol.
+accuracy.Thishighlightstheeffectivenessoftheproposedfea- 197,2020,Art.no.105738.
+tures in extracting relevant information for improved classi- [18] Y.Chang,C.Stevenson,I.-C.Chen,D.-S.Lin,andL.-W.Ko,ΓÇ£Neuro-
+logicalstatechangesindicativeofADHDinchildrenlearnedviaEEG-
+fication. In both scenarios of IDD and ADHD detection, the
+based LSTM networks,ΓÇ¥ J. Neural Eng., vol. 19, no. 1, 2022, Art. no.
+outcome of the proposed approach is compared with recent 016021.
+methods published in the same and other datasets to prove [19] Y. Sharma and B. K. Singh, ΓÇ£Classification of children with attention-
+deficit hyperactivity disorder using Wigner-Ville time-frequency and
+the superiority of the proposed system. With the combina-
+deep expEEGNetwork feature-based computational models,ΓÇ¥ IEEE
+tion of the extensive signal analyzing capability of SMVMD Trans.Med.Robot.Bionics,vol.5,no.4,pp.890ΓÇô902,Nov.2023.
+andML-basedclassifier,theproposedtechniquehasenormous [20] S.SharmaandU.Satija,ΓÇ£Automatedocularartifactsremovalframework
+basedonadaptivechirpmodedecomposition,ΓÇ¥IEEESensorsJ.,vol.22,
+potential in solving different disorder detection using EEG
+no.6,pp.5806ΓÇô5814,Mar.2022.
+and other biomedical & real-world multivariate nonstationary [21] S.Sharma,A.Shedsale,andR.R.Sharma,ΓÇ£Multivariatefastiterative
+signal-relatedissues. filteringbasedautomatedsystemforgraspmotorimageryidentification
+usingEEGsignals,ΓÇ¥Int.J.HumanΓÇôComput.Interaction,pp.7915ΓÇô7923,
+2023.
+REFERENCES
+[22] K. Nithya, S. Sharma, and R. R. Sharma, ΓÇ£Eigenvalues of Hankel
+[1] Z. Wang, J. Liu, W. Zhang, W. Nie, and H. Liu, ΓÇ£Diagnosis and matrix based epilepsy detection using EEG signals,ΓÇ¥ in Proc. 2nd Int.
+interventionforchildrenwithautismspectrumdisorder:Asurvey,ΓÇ¥IEEE Conf.ParadigmShiftsCommun.EmbeddedSyst.,Mach.Learn.Signal
+Trans.Cogn.Develop.Syst.,vol.14,no.3,pp.819ΓÇô832,Sep.2022. Process.(PCEMS),Piscataway,NJ,USA:IEEE,2023,pp.1ΓÇô6.
+[2] M.Gorgoni,S.Scarpelli,F.Reda,andL.DeGennaro,ΓÇ£SleepEEGoscil- [23] A.Iyer,S.S.Das,R.Teotia,S.Maheshwari,andR.R.Sharma,ΓÇ£CNN
+lationsinneurodevelopmentaldisorderswithoutintellectualdisabilities,ΓÇ¥ and LSTM based ensemble learning for human emotion recognition
+SleepMed.Rev.,vol.49,2020,Art.no.101224. usingEEGrecordings,ΓÇ¥MultimediaToolsAppl.,vol.82,no.4,pp.4883ΓÇô
+[3] J. Biederman, ΓÇ£Attention-deficit/hyperactivity disorder: A selective 4896,2023.
+overview,ΓÇ¥Biol.Psychiatry,vol.57,no.11,pp.1215ΓÇô1220,2005. [24] K. Dragomiretskiy and D. Zosso, ΓÇ£Variational mode decomposi-
+[4] K. Pan, T. Jiang, R. Zheng, T. Wang, F. Gao, and J. Cao, ΓÇ£Graph tion,ΓÇ¥ IEEE Trans. Signal Process., vol. 62, no. 3, pp. 531ΓÇô544,
+theorybasedmulti-levelcorticalfunctionalconnectivitydevelopmental Feb.2014.
+analysis,ΓÇ¥IEEETrans.Cogn.Develop.Syst.,vol.16,no.2,pp.650ΓÇô659, [25] K.N.FaisalandR.R.Sharma,ΓÇ£Cross-termsreductioninWVDusing
+Apr.2024. slidingwindow-basedvariationalmodedecomposition,ΓÇ¥in Proc.10th
+[5] H. Altaheri, G. Muhammad, and M. Alsulaiman, ΓÇ£Physics-informed Int. Conf. Signal Process. Integr. Netw. (SPIN), Piscataway, NJ, USA:
+attentiontemporalconvolutionalnetworkforEEG-basedmotorimagery IEEE,2023,pp.58ΓÇô63.
+classification,ΓÇ¥IEEETrans.Ind.Inform.,vol.19,no.2,pp.2249ΓÇô2258, [26] M.NazariandS.M.Sakhaei,ΓÇ£Successivevariationalmodedecompo-
+Feb.2023. sition,ΓÇ¥SignalProcess.,vol.174,2020,Art.no.107610.
+[6] P.Thuwajitetal.,ΓÇ£EEGWaveNet:MultiscaleCNN-basedspatiotemporal [27] K. N. Faisal and R. R. Sharma, ΓÇ£Successive variational mode
+featureextractionforEEGseizuredetection,ΓÇ¥IEEETrans.Ind.Inform., decomposition-based enhanced Wigner-Ville distribution for seismo-
+vol.18,no.8,pp.5547ΓÇô5557,Aug.2022. volcanic events identification,ΓÇ¥ J. Volcanol. Geotherm. Res., vol. 440,
+[7] E.Q.Wu,Z.Cao,P.Xiong,A.Song,L.-M.Zhu,andM.Yu,ΓÇ£Brain- 2023,Art.no.107847.
+computer interface using brain power map and cognition detection [28] S. Liu and K. Yu, ΓÇ£Successive multivariate variational mode decom-
+network during flight,ΓÇ¥ IEEE/ASME Trans. Mechatron., vol. 27, no. 5, position,ΓÇ¥ Multidimensional Syst. Signal Process., vol. 33, no. 3, pp.
+pp.3942ΓÇô3952,Oct.2022. 917ΓÇô943,2022.
+[8] Y.Gu,X.Li,S.Chen,andX.Li,ΓÇ£Effectofrhythmicandnonrhythmic [29] H.T.Toretal.,ΓÇ£Automateddetectionofconductdisorderandattention
+brainactivityonpowerspectralanalysisinchildrenwithattentiondeficit deficit hyperactivity disorder using decomposition and nonlinear tech-
+hyperactivitydisorder,ΓÇ¥IEEETrans.Cogn.Develop.Syst.,vol.14,no. niques with EEG signals,ΓÇ¥ Comput. Methods Programs Biomed., vol.
+3,pp.1046ΓÇô1053,Sep.2022. 200,2021,Art.no.105941.
+[9] E.Sareen,L.Singh,A.Gupta,R.Verma,G.K.Achary,andB.Varkey, [30] M. Y. Esas and F. Latifog╦ÿlu, ΓÇ£Detection of ADHD from EEG signals
+ΓÇ£Functional brain connectivity analysis in intellectual developmental using new hybrid decomposition and deep learning techniques,ΓÇ¥ J.
+disorder during music perception,ΓÇ¥ IEEE Trans. Neural Syst. Rehabil. NeuralEng.,vol.20,no.3,2023,Art.no.036028.
+Eng.,vol.28,no.11,pp.2420ΓÇô2430,Nov.2020. [31] Y. Sharma and B. K. Singh, ΓÇ£Attention deficit hyperactivity disorder
+[10] T. Anwar, ΓÇ£A machine learning approach for recognizing intellectual detection in children using multivariate empirical EEG decomposition
+development disorder using EEG,ΓÇ¥ in Proc. Int. Conf. Biomed. Innov. approaches:Acomprehensiveanalyticalstudy,ΓÇ¥ExpertSyst.Appl.,vol.
+Appl.(BIA),Piscataway,NJ,USA:IEEE,2020,pp.9ΓÇô12. 213,2023,Art.no.119219.
+[11] K. Oda and N. Norouzi, ΓÇ£EEG data analysis for intellectual [32] ├û. Kasim, ΓÇ£Identification of attention deficit hyperactivity disorder
+developmental disorder,ΓÇ¥ in Proc. IEEE Int. Conf. Bioinf. Biomed. with deep learning model,ΓÇ¥ Phys. Eng. Sci. Med., vol. 46, no. 3,
+(BIBM),Piscataway,NJ,USA:IEEE,2021,pp.3662ΓÇô3666. pp.1081ΓÇô1090,2023.
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.
+=== PAGE 10 ===
+CHANDELAetal.:EEG-BASEDUNIFIEDAPPROACHFORMULTIPLENEURODEVELOPMENTALDISORDERSDETECTION 1359
+[33] E.Sareen,L.Singh,B.Varkey,K.Achary,andA.Gupta,ΓÇ£EEGdataset [41] J. Too, ΓÇ£EEG feature extraction toolbox,ΓÇ¥ 2020. [Online]. Available:
+ofindividualswithintellectualanddevelopmentaldisorderandhealthy https://in.mathworks.com/matlabcentral/fileexchange/84235-eeg-
+controlsunderrestandmusicstimuli,ΓÇ¥DataBrief,vol.30,2020,Art. feature-extraction-toolbox
+no.105488. [42] J.Too,A.Abdullah,N.M.Saad,andW.Tee,ΓÇ£EMGfeatureselection
+[34] A. Delorme and S. Makeig, ΓÇ£EEGLAB: An open source toolbox for and classification using a Pbest-guide binary particle swarm optimiza-
+analysis of single-trial EEG dynamics including independent com- tion,ΓÇ¥Computation,vol.7,no.1,p.12,2019.
+ponent analysis,ΓÇ¥ J. Neurosci. Methods, vol. 134, no. 1, pp. 9ΓÇô21, [43] J. Cai, J. Luo, S. Wang, and S. Yang, ΓÇ£Feature selection in machine
+2004. learning: A new perspective,ΓÇ¥ Neurocomputing, vol. 300, pp. 70ΓÇô79,
+[35] A. Motie Nasrabadi, A. Allahverdy, M. Samavati, and M. R. Moham- 2018.
+madi,ΓÇ£EEGdataforADHD/controlchildren,ΓÇ¥2020.[Online].Available: [44] K. N. Faisal, H. S. Mir, and R. R. Sharma, ΓÇ£Human activity
+https://dx.doi.org/10.21227/rzfh-zn36 recognition from FMCW radar signals utilizing cross-terms free
+[36] S.Agarwal,S.Sharma,K.N.Faisal,andR.R.Sharma,ΓÇ£Inducedstress WVD,ΓÇ¥ IEEE Internet Things J., vol. 11, no. 8, pp. 14383ΓÇô14394,
+identificationusingEEG:AframeworkbasedonMVMDandmachine Apr.2024.
+learning,ΓÇ¥inProc.IEEEInt.Stud.Conf.Electr.,Electron.Comput.Sci. [45] N.UrRehmanandH.Aftab,ΓÇ£Multivariatevariationalmodedecompo-
+(SCEECS),2024,pp.1ΓÇô5. sition,ΓÇ¥ IEEE Trans. Signal Process., vol. 67, no. 23, pp. 6039ΓÇô6052,
+[37] P.Keelawat,N.Thammasan,M.Numao,andB.Kijsirikul,ΓÇ£Acompar- Dec.2019.
+ative study of window size and channel arrangement on EEG-emotion [46] A. H. Ansari, V. Matic, M. De Vos, G. Naulaers, P. Cherian, and S.
+recognition using deep CNN,ΓÇ¥ Sensors, vol. 21, no. 5, 2021, Art. no. Van Huffel, ΓÇ£Improvement of an automated neonatal seizure detector
+1678. usingapost-processingtechnique,ΓÇ¥inProc.37thAnnu.Int.Conf.IEEE
+[38] V.Christouetal.,ΓÇ£EvaluatingthewindowsizeΓÇÖsroleinautomaticEEG Eng. Med. Biol. Soc. (EMBC), Piscataway, NJ, USA: IEEE, 2015, pp.
+epilepsydetection,ΓÇ¥Sensors,vol.22,no.23,2022,Art.no.9233. 5859ΓÇô5862.
+[39] H. Candra et al., ΓÇ£Investigation of window size in classification of [47] H. Guo, H. Liu, C. Wu, W. Zhi, Y. Xiao, and W. She, ΓÇ£Logis-
+EEG-emotionsignalwithwaveletentropyandsupportvectormachine,ΓÇ¥ tic discrimination based on g-mean and f-measure for imbalanced
+in Proc. 37th Annu. Int. Conf. IEEE Eng. Med. Biol. Soc. (EMBC), problem,ΓÇ¥ J. Intell. Fuzzy Syst., vol. 31, no. 3, pp. 1155ΓÇô1166,
+Piscataway,NJ,USA:IEEE,2015,pp.7250ΓÇô7253. 2016.
+[40] S.SethandJ.C.Pr├¡ncipe,ΓÇ£Onspeedingupcomputationininformation [48] N. Chauhan and B.-J. Choi, ΓÇ£A machine learning approach to ADHD
+theoretic learning,ΓÇ¥ inProc. Int.Joint Conf.NeuralNetw., Piscataway, diagnosisusingmutualinformationandstackedclassifiers,ΓÇ¥Int.J.Fuzzy
+NJ,USA:IEEE,2009,pp.2883ΓÇô2887. Log.Intell.Syst.,vol.24,no.1,pp.10ΓÇô18,2024.
+Authorized licensed use limited to: Indian Institute of Technology Indore. Downloaded on August 06,2026 at 16:20:18 UTC from IEEE Xplore. Restrictions apply.

@@ -1,0 +1,313 @@
+2026-09-20 01:11:51 | DS1_Music | INFO | DS-1 Music Experiment: IDD vs TDC
+2026-09-20 01:11:51 | DS1_Music | INFO | Paper target: 100% accuracy
+2026-09-20 01:11:51 | DS1_Music | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 01:11:51 | DS1_Music | INFO | Total segments: 644 (expected ~644)
+2026-09-20 15:01:15 | DS1_Music | INFO | DS-1 Music Experiment: IDD vs TDC
+2026-09-20 15:01:15 | DS1_Music | INFO | Paper target: 100% accuracy
+2026-09-20 15:01:15 | DS1_Music | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 15:01:16 | DS1_Music | INFO | Total segments: 644 (expected ~644)
+2026-09-20 17:49:56 | DS1_Music | INFO | DS-1 Music Experiment: IDD vs TDC
+2026-09-20 17:49:56 | DS1_Music | INFO | Paper target: 100% accuracy
+2026-09-20 17:49:56 | DS1_Music | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 17:49:56 | DS1_Music | INFO | Total segments: 644 (expected ~644)
+2026-09-20 23:35:59 | src.data_loader | INFO | MODE B selected: Using dataset's provided preprocessed recordings. This is the recommended mode for paper reproduction.
+2026-09-20 23:35:59 | src.data_loader | INFO | DS-1 directory scan: 29 .mat files in idd\Data
+2026-09-20 23:35:59 | src.data_loader | INFO | Discovered 14 subjects in DS-1: ['IDD_001', 'IDD_002', 'IDD_003', 'IDD_004', 'IDD_005', 'IDD_006', 'IDD_007', 'TDC_001', 'TDC_002', 'TDC_003', 'TDC_004', 'TDC_005', 'TDC_006', 'TDC_007']
+2026-09-20 23:35:59 | DS1_Music | INFO | ============================================================
+DS-1 Dataset Report
+============================================================
+Directory: idd\Data
+Mode: B
+Files discovered: 14 subjects
+  IDD_001: ['music', 'rest']
+  IDD_002: ['music', 'rest']
+  IDD_003: ['music', 'rest']
+  IDD_004: ['music', 'rest']
+  IDD_005: ['music', 'rest']
+  IDD_006: ['music', 'rest']
+  IDD_007: ['music', 'rest']
+  TDC_001: ['music', 'rest']
+  TDC_002: ['music', 'rest']
+  TDC_003: ['music', 'rest']
+  TDC_004: ['music', 'rest']
+  TDC_005: ['music', 'rest']
+  TDC_006: ['music', 'rest']
+  TDC_007: ['music', 'rest']
+IDD subjects: 7 (expected 7)
+TDC subjects: 7 (expected 7)
+2026-09-20 23:35:59 | src.data_loader | INFO | DS-1 directory scan: 29 .mat files in idd\Data
+2026-09-20 23:35:59 | src.data_loader | INFO | Discovered 14 subjects in DS-1: ['IDD_001', 'IDD_002', 'IDD_003', 'IDD_004', 'IDD_005', 'IDD_006', 'IDD_007', 'TDC_001', 'TDC_002', 'TDC_003', 'TDC_004', 'TDC_005', 'TDC_006', 'TDC_007']
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_001 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_002 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_003 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_004 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_005 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_006 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded IDD_007 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_001 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_002 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_003 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_004 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_005 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_006 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.data_loader | INFO | Loaded TDC_007 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-20 23:35:59 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-20 23:35:59 | src.results_io | INFO | [timing] load_preprocess_segment: 0.67s
+2026-09-20 23:35:59 | DS1_Music | INFO | Total segments: 644 (paper: 644)
+2026-09-20 23:35:59 | src.smvmd | INFO | SMVMD decomposing 644 segments: α=2000, τ=0, tol=1e-10, workers=12/12
+2026-09-20 23:36:28 | src.smvmd | INFO | 
+SMVMD Summary over 644 segments:
+  K (modes): min=5, max=20,   mean=10.77, std=3.26
+  Distribution: {np.int64(5): np.int64(2), np.int64(6): np.int64(10), np.int64(7): np.int64(52), np.int64(8): np.int64(75), np.int64(9): np.int64(105), np.int64(10): np.int64(147), np.int64(11): np.int64(81), np.int64(12): np.int64(43), np.int64(13): np.int64(40), np.int64(14): np.int64(18), np.int64(15): np.int64(5), np.int64(16): np.int64(15), np.int64(17): np.int64(3), np.int64(18): np.int64(6), np.int64(19): np.int64(9), np.int64(20): np.int64(33)}
+2026-09-20 23:36:28 | src.smvmd | INFO | ✓ Variable K confirmed: K varies from 5 to 20 across segments
+2026-09-20 23:36:28 | src.results_io | INFO | [timing] smvmd: 28.22s
+2026-09-20 23:36:28 | src.features | INFO | Extracting features from 644 segments (parallel, n_jobs=-1)...
+2026-09-20 23:50:34 | src.results_io | INFO | [timing] features: 846.02s
+2026-09-20 23:50:34 | src.energy_integration | INFO | Integrating 644 segments for DS1: expected output shape (644, 126)
+2026-09-20 23:50:36 | src.energy_integration | INFO | ✓ Feature matrix shape verified: (644, 126)
+  DS-1: ✓ 14 channels × 9 features = 126 features
+2026-09-20 23:50:36 | src.results_io | INFO | [timing] energy_integration: 2.17s
+2026-09-20 23:50:36 | src.energy_integration | INFO | [SHAPE] DS1_Music: actual=(644, 126), expected=(644, 126): ✓
+2026-09-20 23:50:36 | src.energy_integration | INFO | [NaN] ✓ None
+2026-09-20 23:50:36 | src.energy_integration | INFO | [Inf] ✓ None
+2026-09-20 23:50:36 | src.energy_integration | INFO | [FEATURES] 14 channels × 9 features = 126 features
+2026-09-20 23:50:36 | src.energy_integration | INFO |   Feature order: ['STD', 'VAR', 'RMS', 'IQR', 'ASSR', 'AP', 'MFL', 'IP', 'PCC']
+2026-09-20 23:50:36 | src.energy_integration | INFO | ========================================
+Feature Matrix Verification: ALL PASSED ✓
+========================================
+2026-09-20 23:50:36 | src.results_io | INFO | Feature cache saved -> results\features\DS1_Music_features.npz  (X=(644, 126))
+2026-09-20 23:50:39 | DS1_Music | INFO | 
+============================================================
+DS-1 Music (IDD vs TDC)
+  segments=644  features=126 -> mRMR keeps 47
+  KNN (paper Table II): {'n_neighbors': 2, 'distance': 'cityblock', 'weights': 'squared_inverse', 'standardize': False}
+============================================================
+2026-09-20 23:50:40 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 126
+2026-09-20 23:50:42 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:52:19 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:52:20 | src.mrmr | INFO | mRMR done: 126 features selected.
+2026-09-20 23:52:20 | src.mrmr | INFO | Evaluating mRMR feature counts: 1 to 126
+2026-09-20 23:53:01 | src.mrmr | INFO | mRMR optimal: n_features=100, accuracy=100.00%
+2026-09-20 23:53:03 | src.results_io | INFO | Table saved -> results\tables\DS1_Music_mrmr_curve.csv
+2026-09-20 23:53:03 | DS1_Music | INFO | mRMR curve: empirical optimum=100 features (paper states 47 for this experiment)
+2026-09-20 23:53:03 | src.results_io | INFO | [timing] mrmr_curve: 143.56s
+2026-09-20 23:53:03 | src.knn_model | INFO | 
+==================================================
+Evaluating KNN (DS1_Music): 10-fold CV
+  Features: 47, KNN: {'n_neighbors': 2, 'distance': 'cityblock', 'weights': 'squared_inverse', 'standardize': False}
+==================================================
+2026-09-20 23:53:03 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:53:04 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:54:33 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:54:33 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-20 23:54:33 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-20 23:54:37 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:54:38 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:55:52 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:55:52 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-20 23:55:52 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-20 23:55:52 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:55:52 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:56:55 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:56:55 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-20 23:56:55 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-20 23:56:55 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:56:56 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:57:57 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:57:57 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-20 23:57:57 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-20 23:57:57 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:57:57 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:59:06 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:59:06 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-20 23:59:06 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-20 23:59:06 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:59:06 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-20 23:59:48 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-20 23:59:48 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-20 23:59:48 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-20 23:59:48 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-20 23:59:49 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:00:36 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:00:36 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:00:36 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:00:36 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:00:36 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:01:20 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:01:20 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:01:20 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:01:20 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:01:21 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:02:08 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:02:08 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:02:08 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:02:08 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:02:09 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:02:54 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:02:54 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:02:54 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:02:54 | src.knn_model | INFO | 
+Results (DS1_Music):
+  Accuracy:  96.43% (paper target: see docs)
+  Precision: 96.43%
+  Recall:    96.43%
+  F1-score:  96.43%
+  Confusion matrix:
+[[311  11]
+ [ 12 310]]
+2026-09-21 00:02:54 | src.knn_model | INFO |   MCC:       0.9286
+  Kappa:     0.9286
+  GDR:       96.428
+  G-mean:    0.9643
+2026-09-21 00:02:54 | src.results_io | INFO | [timing] cv_paper_protocol: 591.62s
+2026-09-21 00:02:54 | src.evaluation | INFO | 
+=================================================================
+Results: DS-1 Music (IDD vs TDC)
+=================================================================
+Metric                       Ours        Paper    Match
+-----------------------------------------------------------------
+ACCURACY                   96.43%      100.00%        ✗
+PRECISION                  96.43%      100.00%        ✗
+RECALL                     96.43%      100.00%        ✗
+F1                         96.43%      100.00%        ✗
+=================================================================
+2026-09-21 00:02:55 | src.evaluation | INFO | Confusion matrix saved: results\confusion_matrices\cm_DS1_Music.png
+2026-09-21 00:02:55 | src.knn_model | INFO | 
+==================================================
+Subject-Independent Evaluation (DS1_Music)
+  [NOT the paper's protocol - methodological audit only]
+  n_splits=10, features=47
+==================================================
+2026-09-21 00:02:55 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:02:55 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:03:36 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:03:36 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:03:36 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:03:36 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:03:36 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:04:15 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:04:15 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:04:15 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:04:15 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:04:16 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:04:54 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:04:54 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:04:54 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:04:54 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:04:54 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:05:37 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:05:37 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:05:37 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:05:37 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:05:37 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:06:27 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:06:27 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:06:27 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:06:27 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:06:27 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:07:15 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:07:15 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:07:15 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:07:15 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:07:16 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:08:29 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:08:29 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:08:29 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:08:29 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:08:30 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:09:26 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:09:26 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:09:26 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:09:26 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:09:26 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:10:11 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:10:11 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:10:11 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:10:11 | src.mrmr | INFO | Computing mRMR ranking: 126 features → top 47
+2026-09-21 00:10:11 | src.mrmr | INFO | Precomputing 126x126 MI matrix for redundancy...
+2026-09-21 00:10:54 | src.mrmr | INFO | MI matrix ready. Running greedy selection...
+2026-09-21 00:10:54 | src.mrmr | INFO | mRMR done: 47 features selected.
+2026-09-21 00:10:54 | src.knn_model | INFO | KNN without standardization (standardize=False)
+2026-09-21 00:10:54 | src.knn_model | INFO | Subject-Independent Results (DS1_Music):
+  Accuracy: 50.62%
+  [Compare with paper-style: shows effect of segment leakage]
+2026-09-21 00:10:54 | src.results_io | INFO | [timing] cv_subject_independent: 479.28s
+2026-09-21 00:10:54 | src.results_io | INFO | Results saved -> results\metrics\DS1_Music.json
+2026-09-21 00:10:54 | src.results_io | INFO | Table saved -> results\tables\DS1_Music_fold_accuracies.csv
+2026-09-21 00:10:54 | DS1_Music | INFO | DS-1 Music (IDD vs TDC) complete in 2095.4s

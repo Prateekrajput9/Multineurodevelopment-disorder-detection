@@ -1,0 +1,9 @@
+2026-09-21 13:27:51 | Stage1 | INFO | ===== part: embed =====
+2026-09-21 13:28:09 | Stage1 | INFO | [DS1_Rest] silhouette class=0.075 subject=0.218 subject-ID 1NN acc=98.9% (chance 7.1%)
+2026-09-21 13:28:22 | Stage1 | INFO | [DS1_Music] silhouette class=0.066 subject=0.193 subject-ID 1NN acc=99.1% (chance 7.1%)
+2026-09-21 13:28:23 | Stage1 | INFO | [DS1_RestMusic] silhouette class=0.067 subject=0.173 subject-ID 1NN acc=99.3% (chance 7.1%)
+2026-09-21 13:28:25 | Stage1 | INFO | [DS2] silhouette class=0.026 subject=-0.150 subject-ID 1NN acc=65.4% (chance 0.8%)
+2026-09-21 13:28:57 | Stage1 | INFO | figure -> results\stage1\figures\tsne_class_vs_subject.pdf|png
+2026-09-21 13:28:57 | Stage1 | INFO | results_summary.json <- [embedding]
+2026-09-21 13:28:57 | Stage1 | INFO | ===== part embed done in 67s =====
+2026-09-21 13:28:57 | Stage1 | INFO | -> results\stage1\results_summary.md

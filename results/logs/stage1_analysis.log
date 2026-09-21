@@ -1,0 +1,1021 @@
+2026-09-21 13:27:26 | Stage1 | INFO | ===== part: reproduction =====
+2026-09-21 13:27:26 | Stage1 | INFO | results_summary.json <- [reproduction]
+2026-09-21 13:27:26 | Stage1 | INFO | ===== part reproduction done in 0s =====
+2026-09-21 13:27:26 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 13:27:32 | Stage1 | INFO | ===== part: modes =====
+2026-09-21 13:27:35 | Stage1 | INFO | figure -> results\stage1\figures\smvmd_mode_count_histogram.pdf|png
+2026-09-21 13:27:35 | Stage1 | INFO | results_summary.json <- [mode_counts]
+2026-09-21 13:27:35 | Stage1 | INFO | ===== part modes done in 2s =====
+2026-09-21 13:27:35 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 13:27:51 | Stage1 | INFO | ===== part: embed =====
+2026-09-21 13:28:09 | Stage1 | INFO | [DS1_Rest] silhouette class=0.075 subject=0.218 subject-ID 1NN acc=98.9% (chance 7.1%)
+2026-09-21 13:28:22 | Stage1 | INFO | [DS1_Music] silhouette class=0.066 subject=0.193 subject-ID 1NN acc=99.1% (chance 7.1%)
+2026-09-21 13:28:23 | Stage1 | INFO | [DS1_RestMusic] silhouette class=0.067 subject=0.173 subject-ID 1NN acc=99.3% (chance 7.1%)
+2026-09-21 13:28:25 | Stage1 | INFO | [DS2] silhouette class=0.026 subject=-0.150 subject-ID 1NN acc=65.4% (chance 0.8%)
+2026-09-21 13:28:57 | Stage1 | INFO | figure -> results\stage1\figures\tsne_class_vs_subject.pdf|png
+2026-09-21 13:28:57 | Stage1 | INFO | results_summary.json <- [embedding]
+2026-09-21 13:28:57 | Stage1 | INFO | ===== part embed done in 67s =====
+2026-09-21 13:28:57 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 13:29:10 | Stage1 | INFO | ===== part: eval =====
+2026-09-21 13:30:50 | Stage1 | INFO | [DS1_Rest | smvmd_overlap50 | SEG10] seg acc=99.69%  subject vote acc=100.00% (14/14)  [100.2s]
+2026-09-21 13:30:52 | Stage1 | INFO | [DS1_Rest | smvmd_overlap50 | SEG10_GLOBAL] seg acc=99.69%  subject vote acc=100.00% (14/14)  [2.2s]
+2026-09-21 13:34:05 | Stage1 | INFO | [DS1_Rest | smvmd_overlap50 | SUBJ] seg acc=62.73%  subject vote acc=71.43% (10/14)  [192.7s]
+2026-09-21 13:36:11 | Stage1 | INFO | [DS1_Rest | smvmd_overlap0 | SEG10] seg acc=99.07%  subject vote acc=100.00% (14/14)  [126.3s]
+2026-09-21 13:39:57 | Stage1 | INFO | [DS1_Rest | smvmd_overlap0 | SUBJ] seg acc=63.66%  subject vote acc=64.29% (9/14)  [225.9s]
+2026-09-21 13:39:59 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Rest.pdf|png
+2026-09-21 13:39:59 | Stage1 | INFO | results_summary.json <- [protocols]
+2026-09-21 13:42:49 | Stage1 | INFO | [DS1_Music | smvmd_overlap50 | SEG10] seg acc=96.43%  subject vote acc=100.00% (14/14)  [169.6s]
+2026-09-21 13:42:49 | Stage1 | INFO | [DS1_Music | smvmd_overlap50 | SEG10_GLOBAL] seg acc=94.10%  subject vote acc=100.00% (14/14)  [0.3s]
+2026-09-21 13:47:14 | Stage1 | INFO | [DS1_Music | smvmd_overlap50 | SUBJ] seg acc=43.01%  subject vote acc=57.14% (8/14)  [265.0s]
+2026-09-21 13:51:16 | Stage1 | INFO | [DS1_Music | smvmd_overlap0 | SEG10] seg acc=94.41%  subject vote acc=100.00% (14/14)  [241.8s]
+2026-09-21 13:55:07 | Stage1 | INFO | [DS1_Music | smvmd_overlap0 | SUBJ] seg acc=50.62%  subject vote acc=57.14% (8/14)  [231.2s]
+2026-09-21 13:55:08 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Music.pdf|png
+2026-09-21 13:55:08 | Stage1 | INFO | results_summary.json <- [protocols]
+2026-09-21 14:00:15 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap50 | SEG10] seg acc=99.77%  subject vote acc=100.00% (14/14)  [306.2s]
+2026-09-21 14:00:15 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap50 | SEG10_GLOBAL] seg acc=99.77%  subject vote acc=100.00% (14/14)  [0.5s]
+2026-09-21 14:00:21 | Stage1 | INFO | ===== part: reproduction =====
+2026-09-21 14:00:21 | Stage1 | INFO | results_summary.json <- [reproduction]
+2026-09-21 14:00:21 | Stage1 | INFO | ===== part reproduction done in 0s =====
+2026-09-21 14:00:21 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 14:00:21 | Stage1 | INFO | ===== part: modes =====
+2026-09-21 14:00:23 | Stage1 | INFO | figure -> results\stage1\figures\smvmd_mode_count_histogram.pdf|png
+2026-09-21 14:00:23 | Stage1 | INFO | results_summary.json <- [mode_counts]
+2026-09-21 14:00:23 | Stage1 | INFO | ===== part modes done in 2s =====
+2026-09-21 14:00:23 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 14:00:23 | Stage1 | INFO | ===== part: embed =====
+2026-09-21 14:01:09 | Stage1 | INFO | [DS1_Rest] silhouette class=0.075 subject=0.218 subject-ID 1NN acc=98.9% (chance 7.1%)
+2026-09-21 14:02:38 | Stage1 | INFO | [DS1_Music] silhouette class=0.066 subject=0.193 subject-ID 1NN acc=99.1% (chance 7.1%)
+2026-09-21 14:02:40 | Stage1 | INFO | [DS1_RestMusic] silhouette class=0.067 subject=0.173 subject-ID 1NN acc=99.3% (chance 7.1%)
+2026-09-21 14:02:49 | Stage1 | INFO | [DS2] silhouette class=0.026 subject=-0.150 subject-ID 1NN acc=65.4% (chance 0.8%)
+2026-09-21 14:04:55 | Stage1 | INFO | figure -> results\stage1\figures\tsne_class_vs_subject.pdf|png
+2026-09-21 14:04:55 | Stage1 | INFO | results_summary.json <- [embedding]
+2026-09-21 14:04:55 | Stage1 | INFO | ===== part embed done in 272s =====
+2026-09-21 14:04:55 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 14:04:55 | Stage1 | INFO | ===== part: eval =====
+2026-09-21 14:18:31 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap50 | SUBJ] seg acc=62.34%  subject vote acc=64.29% (9/14)  [1095.7s]
+2026-09-21 14:23:09 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap0 | SEG10] seg acc=99.22%  subject vote acc=100.00% (14/14)  [277.7s]
+2026-09-21 14:32:44 | Stage1 | INFO | [DS1_RestMusic | smvmd_overlap0 | SUBJ] seg acc=63.51%  subject vote acc=71.43% (10/14)  [575.3s]
+2026-09-21 14:32:50 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_RestMusic.pdf|png
+2026-09-21 14:32:50 | Stage1 | INFO | results_summary.json <- [protocols]
+2026-09-21 14:32:52 | Stage1 | INFO | [DS2 | smvmd_overlap50 | SEG10] seg acc=85.81%  subject vote acc=100.00% (121/121)  [2.3s]
+2026-09-21 14:32:54 | Stage1 | INFO | [DS2 | smvmd_overlap50 | SUBJ] seg acc=57.54%  subject vote acc=61.16% (74/121)  [2.1s]
+2026-09-21 14:32:55 | Stage1 | INFO | [DS2 | smvmd_overlap0 | SEG10] seg acc=74.86%  subject vote acc=90.08% (109/121)  [0.7s]
+2026-09-21 14:32:56 | Stage1 | INFO | [DS2 | smvmd_overlap0 | SUBJ] seg acc=58.04%  subject vote acc=65.29% (79/121)  [0.7s]
+2026-09-21 14:32:57 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS2.pdf|png
+2026-09-21 14:32:58 | Stage1 | INFO | results_summary.json <- [protocols]
+2026-09-21 14:32:58 | Stage1 | INFO | ===== part eval done in 3828s =====
+2026-09-21 14:32:58 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 14:33:25 | Stage1 | INFO | ===== part: raw =====
+2026-09-21 14:33:26 | src.data_loader | INFO | MODE B selected: Using dataset's provided preprocessed recordings. This is the recommended mode for paper reproduction.
+2026-09-21 14:33:26 | src.data_loader | INFO | DS-1 directory scan: 29 .mat files in idd\Data
+2026-09-21 14:33:26 | src.data_loader | INFO | Discovered 14 subjects in DS-1: ['IDD_001', 'IDD_002', 'IDD_003', 'IDD_004', 'IDD_005', 'IDD_006', 'IDD_007', 'TDC_001', 'TDC_002', 'TDC_003', 'TDC_004', 'TDC_005', 'TDC_006', 'TDC_007']
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_001 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_002 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_003 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_004 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_005 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_006 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded IDD_007 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded TDC_001 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded TDC_002 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:26 | src.data_loader | INFO | Loaded TDC_003 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:26 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_004 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_005 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_006 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_007 (rest): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_001 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_002 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_003 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_004 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_005 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_006 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded IDD_007 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_001 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_002 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_003 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_004 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_005 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_006 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:33:27 | src.data_loader | INFO | Loaded TDC_007 (music): shape=(14, 15360), duration=120.0s (expected 120s)
+2026-09-21 14:33:27 | src.preprocessing | INFO | DS-1 MODE B: Using dataset-provided preprocessed EEG. No additional preprocessing applied.
+2026-09-21 14:36:16 | Stage1 | INFO | raw DS-1 features in 171s
+2026-09-21 14:36:16 | src.data_loader | WARNING | Cannot determine label for ZIP: Channel_Labels.zip. Expected 'ADHD' or 'Control' in filename. Skipping.
+2026-09-21 14:36:16 | src.data_loader | WARNING | Cannot determine label for ZIP: Standard-10-20-Cap19new.zip. Expected 'ADHD' or 'Control' in filename. Skipping.
+2026-09-21 14:36:16 | src.data_loader | INFO | DS-2 discovered: 61 ADHD (expected 61), 60 NC (expected 60), total 121 (expected 121)
+2026-09-21 14:36:16 | src.data_loader | INFO | DS-2 loaded v107 (NC): shape=(19, 19794), duration=154.6s
+2026-09-21 14:36:16 | src.data_loader | INFO | DS-2 loaded v108 (NC): shape=(19, 19026), duration=148.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v109 (NC): shape=(19, 16044), duration=125.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v10p (ADHD): shape=(19, 14304), duration=111.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v110 (NC): shape=(19, 16549), duration=129.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v111 (NC): shape=(19, 15310), duration=119.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v112 (NC): shape=(19, 15943), duration=124.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v113 (NC): shape=(19, 15574), duration=121.7s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v114 (NC): shape=(19, 13304), duration=103.9s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v115 (NC): shape=(19, 15651), duration=122.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v116 (NC): shape=(19, 19301), duration=150.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v117 (NC): shape=(19, 25659), duration=200.5s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v118 (NC): shape=(19, 12007), duration=93.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v120 (NC): shape=(19, 12033), duration=94.0s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v121 (NC): shape=(19, 16377), duration=127.9s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v123 (NC): shape=(19, 14550), duration=113.7s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v125 (NC): shape=(19, 15378), duration=120.1s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v127 (NC): shape=(19, 14721), duration=115.0s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v129 (NC): shape=(19, 11208), duration=87.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v12p (ADHD): shape=(19, 17604), duration=137.5s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v131 (NC): shape=(19, 16686), duration=130.4s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v133 (NC): shape=(19, 15073), duration=117.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v134 (NC): shape=(19, 13359), duration=104.4s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v138 (NC): shape=(19, 12488), duration=97.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v140 (NC): shape=(19, 17187), duration=134.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v143 (NC): shape=(19, 15607), duration=121.9s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v147 (NC): shape=(19, 14209), duration=111.0s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v149 (NC): shape=(19, 17098), duration=133.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v14p (ADHD): shape=(19, 17562), duration=137.2s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v151 (NC): shape=(19, 20914), duration=163.4s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v15p (ADHD): shape=(19, 43252), duration=337.9s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v173 (ADHD): shape=(19, 24241), duration=189.4s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v177 (ADHD): shape=(19, 16697), duration=130.4s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v179 (ADHD): shape=(19, 12673), duration=99.0s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v181 (ADHD): shape=(19, 10668), duration=83.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v183 (ADHD): shape=(19, 18591), duration=145.2s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v18p (ADHD): shape=(19, 25003), duration=195.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v190 (ADHD): shape=(19, 15465), duration=120.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v196 (ADHD): shape=(19, 13395), duration=104.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v198 (ADHD): shape=(19, 19621), duration=153.3s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v19p (ADHD): shape=(19, 23063), duration=180.2s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v1p (ADHD): shape=(19, 12258), duration=95.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v200 (ADHD): shape=(19, 12739), duration=99.5s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v204 (ADHD): shape=(19, 20456), duration=159.8s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v206 (ADHD): shape=(19, 20173), duration=157.6s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v209 (ADHD): shape=(19, 30273), duration=236.5s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v20p (ADHD): shape=(19, 35328), duration=276.0s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v213 (ADHD): shape=(19, 12353), duration=96.5s
+2026-09-21 14:36:17 | src.data_loader | INFO | DS-2 loaded v215 (ADHD): shape=(19, 21372), duration=167.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v219 (ADHD): shape=(19, 27157), duration=212.2s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v21p (ADHD): shape=(19, 16574), duration=129.5s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v227 (ADHD): shape=(19, 28080), duration=219.4s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v22p (ADHD): shape=(19, 12100), duration=94.5s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v231 (ADHD): shape=(19, 19713), duration=154.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v234 (ADHD): shape=(19, 34191), duration=267.1s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v236 (ADHD): shape=(19, 13502), duration=105.5s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v238 (ADHD): shape=(19, 9852), duration=77.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v244 (ADHD): shape=(19, 39030), duration=304.9s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v246 (ADHD): shape=(19, 21307), duration=166.5s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v24p (ADHD): shape=(19, 16385), duration=128.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v250 (ADHD): shape=(19, 13853), duration=108.2s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v254 (ADHD): shape=(19, 10477), duration=81.9s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v25p (ADHD): shape=(19, 9894), duration=77.3s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v263 (ADHD): shape=(19, 18657), duration=145.8s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v265 (ADHD): shape=(19, 18389), duration=143.7s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v270 (ADHD): shape=(19, 23681), duration=185.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v274 (ADHD): shape=(19, 17323), duration=135.3s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v279 (ADHD): shape=(19, 20134), duration=157.3s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v27p (ADHD): shape=(19, 28880), duration=225.6s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v284 (ADHD): shape=(19, 15383), duration=120.2s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v286 (ADHD): shape=(19, 11465), duration=89.6s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v288 (ADHD): shape=(19, 20115), duration=157.1s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v28p (ADHD): shape=(19, 27612), duration=215.7s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v297 (NC): shape=(19, 13697), duration=107.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v298 (NC): shape=(19, 17782), duration=138.9s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v299 (NC): shape=(19, 22260), duration=173.9s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v29p (ADHD): shape=(19, 24193), duration=189.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v300 (NC): shape=(19, 25985), duration=203.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v302 (NC): shape=(19, 17841), duration=139.4s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v303 (NC): shape=(19, 19222), duration=150.2s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v304 (NC): shape=(19, 13400), duration=104.7s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v305 (NC): shape=(19, 22273), duration=174.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v306 (NC): shape=(19, 18301), duration=143.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v307 (NC): shape=(19, 22807), duration=178.2s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v308 (NC): shape=(19, 17025), duration=133.0s
+2026-09-21 14:36:18 | src.data_loader | INFO | DS-2 loaded v309 (NC): shape=(19, 24818), duration=193.9s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v30p (ADHD): shape=(19, 21663), duration=169.2s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v310 (NC): shape=(19, 17793), duration=139.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v31p (ADHD): shape=(19, 11679), duration=91.2s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v32p (ADHD): shape=(19, 18049), duration=141.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v33p (ADHD): shape=(19, 29217), duration=228.3s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v34p (ADHD): shape=(19, 19555), duration=152.8s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v35p (ADHD): shape=(19, 15305), duration=119.6s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v36p (ADHD): shape=(19, 17401), duration=135.9s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v37p (ADHD): shape=(19, 9286), duration=72.5s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v38p (ADHD): shape=(19, 24695), duration=192.9s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v39p (ADHD): shape=(19, 18177), duration=142.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v3p (ADHD): shape=(19, 33570), duration=262.3s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v40p (ADHD): shape=(19, 20097), duration=157.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v41p (NC): shape=(19, 12500), duration=97.7s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v42p (NC): shape=(19, 16704), duration=130.5s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v43p (NC): shape=(19, 12750), duration=99.6s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v44p (NC): shape=(19, 11393), duration=89.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v45p (NC): shape=(19, 10871), duration=84.9s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v46p (NC): shape=(19, 9823), duration=76.7s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v47p (NC): shape=(19, 10864), duration=84.9s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v48p (NC): shape=(19, 10452), duration=81.7s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v49p (NC): shape=(19, 16769), duration=131.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v50p (NC): shape=(19, 16239), duration=126.9s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v51p (NC): shape=(19, 7983), duration=62.4s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v52p (NC): shape=(19, 13883), duration=108.5s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v53p (NC): shape=(19, 19122), duration=149.4s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v54p (NC): shape=(19, 19234), duration=150.3s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v55p (NC): shape=(19, 14282), duration=111.6s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v56p (NC): shape=(19, 14139), duration=110.5s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v57p (NC): shape=(19, 14692), duration=114.8s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v58p (NC): shape=(19, 13918), duration=108.7s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v59p (NC): shape=(19, 16513), duration=129.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v60p (NC): shape=(19, 12929), duration=101.0s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v6p (ADHD): shape=(19, 17561), duration=137.2s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2 loaded v8p (ADHD): shape=(19, 15776), duration=123.2s
+2026-09-21 14:36:19 | src.data_loader | INFO | DS-2: Loaded 121 subjects
+2026-09-21 14:36:19 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19794), fs=128 Hz
+2026-09-21 14:36:19 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:36:21 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:36:21 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:37:13 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:37:13 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19794)
+2026-09-21 14:37:13 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19026), fs=128 Hz
+2026-09-21 14:37:13 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:37:13 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:37:13 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:38:02 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:38:02 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19026)
+2026-09-21 14:38:02 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16044), fs=128 Hz
+2026-09-21 14:38:02 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:38:02 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:38:02 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:38:39 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:38:40 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16044)
+2026-09-21 14:38:40 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14304), fs=128 Hz
+2026-09-21 14:38:40 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:38:40 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:38:40 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:39:12 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:39:12 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14304)
+2026-09-21 14:39:12 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16549), fs=128 Hz
+2026-09-21 14:39:12 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:39:12 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:39:12 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:39:50 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:39:50 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16549)
+2026-09-21 14:39:50 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15310), fs=128 Hz
+2026-09-21 14:39:50 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:39:51 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:39:51 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:40:26 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:40:26 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15310)
+2026-09-21 14:40:26 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15943), fs=128 Hz
+2026-09-21 14:40:26 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:40:26 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:40:26 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:41:03 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:41:03 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15943)
+2026-09-21 14:41:03 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15574), fs=128 Hz
+2026-09-21 14:41:03 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:41:03 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:41:03 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:41:38 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:41:38 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15574)
+2026-09-21 14:41:38 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13304), fs=128 Hz
+2026-09-21 14:41:38 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:41:39 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:41:39 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:42:07 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:42:07 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13304)
+2026-09-21 14:42:07 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15651), fs=128 Hz
+2026-09-21 14:42:07 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:42:07 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:42:07 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:42:24 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:42:24 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15651)
+2026-09-21 14:42:24 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19301), fs=128 Hz
+2026-09-21 14:42:24 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:42:24 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:42:24 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:42:32 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:42:32 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19301)
+2026-09-21 14:42:32 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 25659), fs=128 Hz
+2026-09-21 14:42:32 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:42:32 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:42:32 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:43:28 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:43:28 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 25659)
+2026-09-21 14:43:28 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12007), fs=128 Hz
+2026-09-21 14:43:28 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:43:28 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:43:28 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:43:53 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:43:53 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12007)
+2026-09-21 14:43:53 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12033), fs=128 Hz
+2026-09-21 14:43:53 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:43:53 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:43:53 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:44:19 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:44:19 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12033)
+2026-09-21 14:44:19 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16377), fs=128 Hz
+2026-09-21 14:44:19 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:44:19 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:44:19 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:44:57 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:44:57 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16377)
+2026-09-21 14:44:57 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14550), fs=128 Hz
+2026-09-21 14:44:57 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:44:57 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:44:57 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:45:30 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:45:30 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14550)
+2026-09-21 14:45:30 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15378), fs=128 Hz
+2026-09-21 14:45:30 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:45:30 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:45:30 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:46:05 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:46:05 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15378)
+2026-09-21 14:46:05 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14721), fs=128 Hz
+2026-09-21 14:46:05 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:46:05 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:46:05 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:46:38 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:46:39 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14721)
+2026-09-21 14:46:39 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 11208), fs=128 Hz
+2026-09-21 14:46:39 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:46:39 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:46:39 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:47:01 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:47:01 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 11208)
+2026-09-21 14:47:01 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17604), fs=128 Hz
+2026-09-21 14:47:01 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:47:01 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:47:01 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:47:44 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:47:44 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17604)
+2026-09-21 14:47:44 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16686), fs=128 Hz
+2026-09-21 14:47:44 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:47:44 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:47:45 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:48:24 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:48:24 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16686)
+2026-09-21 14:48:24 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15073), fs=128 Hz
+2026-09-21 14:48:24 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:48:24 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:48:24 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:48:57 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:48:58 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15073)
+2026-09-21 14:48:58 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13359), fs=128 Hz
+2026-09-21 14:48:58 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:48:58 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:48:58 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:49:27 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:49:27 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13359)
+2026-09-21 14:49:27 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12488), fs=128 Hz
+2026-09-21 14:49:27 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:49:27 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:49:27 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:49:53 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:49:53 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12488)
+2026-09-21 14:49:53 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17187), fs=128 Hz
+2026-09-21 14:49:53 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:49:53 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:49:53 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:50:34 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:50:34 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17187)
+2026-09-21 14:50:34 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15607), fs=128 Hz
+2026-09-21 14:50:34 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:50:35 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:50:35 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:51:10 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:51:10 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15607)
+2026-09-21 14:51:10 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14209), fs=128 Hz
+2026-09-21 14:51:10 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:51:10 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:51:10 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:51:41 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:51:41 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14209)
+2026-09-21 14:51:41 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17098), fs=128 Hz
+2026-09-21 14:51:41 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:51:41 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:51:41 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:52:22 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:52:22 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17098)
+2026-09-21 14:52:22 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17562), fs=128 Hz
+2026-09-21 14:52:22 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:52:22 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:52:22 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:53:05 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:53:06 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17562)
+2026-09-21 14:53:06 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 20914), fs=128 Hz
+2026-09-21 14:53:06 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:53:06 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:53:06 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:54:01 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:54:01 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 20914)
+2026-09-21 14:54:01 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 43252), fs=128 Hz
+2026-09-21 14:54:01 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:54:01 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:54:01 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:55:34 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:55:34 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 43252)
+2026-09-21 14:55:34 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 24241), fs=128 Hz
+2026-09-21 14:55:34 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:55:34 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:55:34 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:56:24 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:56:24 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 24241)
+2026-09-21 14:56:24 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16697), fs=128 Hz
+2026-09-21 14:56:24 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:56:24 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:56:24 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:57:04 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:57:04 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16697)
+2026-09-21 14:57:04 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12673), fs=128 Hz
+2026-09-21 14:57:04 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:57:04 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:57:04 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:57:30 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:57:30 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12673)
+2026-09-21 14:57:30 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 10668), fs=128 Hz
+2026-09-21 14:57:30 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:57:30 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:57:30 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:57:52 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:57:52 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 10668)
+2026-09-21 14:57:52 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 18591), fs=128 Hz
+2026-09-21 14:57:52 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:57:52 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:57:52 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:58:38 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:58:38 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 18591)
+2026-09-21 14:58:38 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 25003), fs=128 Hz
+2026-09-21 14:58:38 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:58:38 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:58:38 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 14:59:48 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 14:59:49 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 25003)
+2026-09-21 14:59:49 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15465), fs=128 Hz
+2026-09-21 14:59:49 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 14:59:49 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 14:59:49 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:00:24 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:00:24 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15465)
+2026-09-21 15:00:24 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13395), fs=128 Hz
+2026-09-21 15:00:24 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:00:25 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:00:25 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:00:54 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:00:54 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13395)
+2026-09-21 15:00:54 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19621), fs=128 Hz
+2026-09-21 15:00:54 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:00:54 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:00:54 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:01:45 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:01:45 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19621)
+2026-09-21 15:01:45 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 23063), fs=128 Hz
+2026-09-21 15:01:45 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:01:45 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:01:45 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:02:48 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:02:49 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 23063)
+2026-09-21 15:02:49 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12258), fs=128 Hz
+2026-09-21 15:02:49 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:02:49 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:02:49 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:03:15 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:03:15 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12258)
+2026-09-21 15:03:15 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12739), fs=128 Hz
+2026-09-21 15:03:15 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:03:15 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:03:15 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:03:42 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:03:42 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12739)
+2026-09-21 15:03:42 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 20456), fs=128 Hz
+2026-09-21 15:03:42 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:03:42 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:03:42 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:04:36 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:04:36 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 20456)
+2026-09-21 15:04:36 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 20173), fs=128 Hz
+2026-09-21 15:04:36 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:04:36 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:04:36 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:05:29 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:05:29 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 20173)
+2026-09-21 15:05:29 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 30273), fs=128 Hz
+2026-09-21 15:05:29 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:05:29 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:05:29 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:07:04 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:07:05 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 30273)
+2026-09-21 15:07:05 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 35328), fs=128 Hz
+2026-09-21 15:07:05 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:07:05 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:07:05 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:09:07 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:09:07 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 35328)
+2026-09-21 15:09:07 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12353), fs=128 Hz
+2026-09-21 15:09:07 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:09:07 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:09:07 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:09:14 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:09:14 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12353)
+2026-09-21 15:09:14 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 21372), fs=128 Hz
+2026-09-21 15:09:14 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:09:14 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:09:14 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:09:29 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:09:29 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 21372)
+2026-09-21 15:09:29 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 27157), fs=128 Hz
+2026-09-21 15:09:29 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:09:29 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:09:29 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:09:54 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:09:54 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 27157)
+2026-09-21 15:09:54 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16574), fs=128 Hz
+2026-09-21 15:09:54 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:09:54 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:09:54 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:10:07 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:10:07 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16574)
+2026-09-21 15:10:07 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 28080), fs=128 Hz
+2026-09-21 15:10:07 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:10:07 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:10:07 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:10:36 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:10:36 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 28080)
+2026-09-21 15:10:36 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12100), fs=128 Hz
+2026-09-21 15:10:36 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:10:36 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:10:36 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:10:43 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:10:43 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12100)
+2026-09-21 15:10:43 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19713), fs=128 Hz
+2026-09-21 15:10:43 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:10:43 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:10:43 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:11:00 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:11:00 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19713)
+2026-09-21 15:11:00 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 34191), fs=128 Hz
+2026-09-21 15:11:00 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:11:00 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:11:01 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:11:38 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:11:38 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 34191)
+2026-09-21 15:11:38 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13502), fs=128 Hz
+2026-09-21 15:11:38 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:11:38 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:11:38 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:11:47 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:11:47 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13502)
+2026-09-21 15:11:47 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 9852), fs=128 Hz
+2026-09-21 15:11:47 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:11:47 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:11:47 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:11:54 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:11:54 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 9852)
+2026-09-21 15:11:54 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 39030), fs=128 Hz
+2026-09-21 15:11:54 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:11:54 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:11:54 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:12:43 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:12:43 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 39030)
+2026-09-21 15:12:43 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 21307), fs=128 Hz
+2026-09-21 15:12:43 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:12:43 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:12:43 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:13:03 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:13:03 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 21307)
+2026-09-21 15:13:03 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16385), fs=128 Hz
+2026-09-21 15:13:03 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:13:03 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:13:03 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:13:16 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:13:16 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16385)
+2026-09-21 15:13:16 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13853), fs=128 Hz
+2026-09-21 15:13:16 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:13:16 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:13:16 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:13:25 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:13:25 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13853)
+2026-09-21 15:13:25 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 10477), fs=128 Hz
+2026-09-21 15:13:25 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:13:25 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:13:25 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:13:31 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:13:31 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 10477)
+2026-09-21 15:13:31 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 9894), fs=128 Hz
+2026-09-21 15:13:31 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:13:31 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:13:31 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:13:37 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:13:37 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 9894)
+2026-09-21 15:13:37 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 18657), fs=128 Hz
+2026-09-21 15:13:37 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:13:37 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:13:37 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:13:51 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:13:51 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 18657)
+2026-09-21 15:13:51 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 18389), fs=128 Hz
+2026-09-21 15:13:51 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:13:51 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:13:51 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:14:05 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:14:05 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 18389)
+2026-09-21 15:14:05 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 23681), fs=128 Hz
+2026-09-21 15:14:05 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:14:05 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:14:05 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:14:25 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:14:26 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 23681)
+2026-09-21 15:14:26 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17323), fs=128 Hz
+2026-09-21 15:14:26 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:14:26 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:14:26 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:14:38 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:14:38 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17323)
+2026-09-21 15:14:38 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 20134), fs=128 Hz
+2026-09-21 15:14:38 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:14:38 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:14:38 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:14:54 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:14:54 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 20134)
+2026-09-21 15:14:54 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 28880), fs=128 Hz
+2026-09-21 15:14:54 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:14:54 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:14:54 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:15:20 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:15:20 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 28880)
+2026-09-21 15:15:20 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15383), fs=128 Hz
+2026-09-21 15:15:20 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:15:20 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:15:20 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:15:30 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:15:30 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15383)
+2026-09-21 15:15:30 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 11465), fs=128 Hz
+2026-09-21 15:15:30 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:15:30 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:15:30 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:15:38 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:15:38 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 11465)
+2026-09-21 15:15:38 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 20115), fs=128 Hz
+2026-09-21 15:15:38 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:15:38 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:15:38 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:15:53 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:15:53 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 20115)
+2026-09-21 15:15:53 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 27612), fs=128 Hz
+2026-09-21 15:15:53 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:15:53 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:15:53 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:16:21 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:16:21 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 27612)
+2026-09-21 15:16:21 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13697), fs=128 Hz
+2026-09-21 15:16:21 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:16:21 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:16:21 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:16:32 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:16:32 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13697)
+2026-09-21 15:16:32 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17782), fs=128 Hz
+2026-09-21 15:16:32 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:16:32 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:16:32 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:16:46 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:16:46 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17782)
+2026-09-21 15:16:46 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 22260), fs=128 Hz
+2026-09-21 15:16:46 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:16:46 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:16:46 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:17:05 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:17:05 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 22260)
+2026-09-21 15:17:05 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 24193), fs=128 Hz
+2026-09-21 15:17:05 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:17:05 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:17:05 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:17:26 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:17:26 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 24193)
+2026-09-21 15:17:26 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 25985), fs=128 Hz
+2026-09-21 15:17:26 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:17:26 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:17:26 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:17:49 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:17:49 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 25985)
+2026-09-21 15:17:49 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17841), fs=128 Hz
+2026-09-21 15:17:49 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:17:49 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:17:49 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:18:02 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:18:02 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17841)
+2026-09-21 15:18:02 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19222), fs=128 Hz
+2026-09-21 15:18:02 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:18:02 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:18:02 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:18:19 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:18:19 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19222)
+2026-09-21 15:18:19 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13400), fs=128 Hz
+2026-09-21 15:18:19 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:18:19 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:18:19 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:18:30 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:18:30 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13400)
+2026-09-21 15:18:30 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 22273), fs=128 Hz
+2026-09-21 15:18:30 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:18:30 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:18:30 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:18:55 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:18:55 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 22273)
+2026-09-21 15:18:55 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 18301), fs=128 Hz
+2026-09-21 15:18:55 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:18:55 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:18:55 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:19:11 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:19:11 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 18301)
+2026-09-21 15:19:11 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 22807), fs=128 Hz
+2026-09-21 15:19:11 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:19:11 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:19:11 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:19:30 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:19:30 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 22807)
+2026-09-21 15:19:30 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17025), fs=128 Hz
+2026-09-21 15:19:30 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:19:30 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:19:30 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:19:42 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:19:42 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17025)
+2026-09-21 15:19:42 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 24818), fs=128 Hz
+2026-09-21 15:19:42 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:19:42 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:19:42 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:20:05 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:20:05 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 24818)
+2026-09-21 15:20:05 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 21663), fs=128 Hz
+2026-09-21 15:20:05 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:20:05 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:20:05 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:20:23 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:20:23 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 21663)
+2026-09-21 15:20:23 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17793), fs=128 Hz
+2026-09-21 15:20:23 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:20:23 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:20:23 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:20:37 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:20:37 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17793)
+2026-09-21 15:20:37 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 11679), fs=128 Hz
+2026-09-21 15:20:37 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:20:37 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:20:37 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:20:44 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:20:44 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 11679)
+2026-09-21 15:20:44 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 18049), fs=128 Hz
+2026-09-21 15:20:44 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:20:44 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:20:44 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:20:59 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:20:59 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 18049)
+2026-09-21 15:20:59 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 29217), fs=128 Hz
+2026-09-21 15:20:59 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:20:59 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:20:59 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:21:28 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:21:28 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 29217)
+2026-09-21 15:21:28 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19555), fs=128 Hz
+2026-09-21 15:21:28 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:21:28 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:21:28 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:21:45 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:21:45 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19555)
+2026-09-21 15:21:45 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15305), fs=128 Hz
+2026-09-21 15:21:45 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:21:45 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:21:45 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:21:56 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:21:56 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15305)
+2026-09-21 15:21:56 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17401), fs=128 Hz
+2026-09-21 15:21:56 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:21:56 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:21:56 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:22:10 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:22:10 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17401)
+2026-09-21 15:22:10 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 9286), fs=128 Hz
+2026-09-21 15:22:10 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:22:10 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:22:10 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:22:16 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:22:16 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 9286)
+2026-09-21 15:22:16 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 24695), fs=128 Hz
+2026-09-21 15:22:16 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:22:16 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:22:16 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:22:37 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:22:37 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 24695)
+2026-09-21 15:22:37 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 18177), fs=128 Hz
+2026-09-21 15:22:37 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:22:37 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:22:37 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:22:52 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:22:52 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 18177)
+2026-09-21 15:22:52 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 33570), fs=128 Hz
+2026-09-21 15:22:52 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:22:52 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:22:52 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:23:26 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:23:26 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 33570)
+2026-09-21 15:23:26 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 20097), fs=128 Hz
+2026-09-21 15:23:26 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:23:26 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:23:26 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:23:42 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:23:42 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 20097)
+2026-09-21 15:23:42 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12500), fs=128 Hz
+2026-09-21 15:23:42 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:23:42 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:23:42 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:23:49 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:23:49 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12500)
+2026-09-21 15:23:49 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16704), fs=128 Hz
+2026-09-21 15:23:49 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:23:49 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:23:49 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:01 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:01 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16704)
+2026-09-21 15:24:01 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12750), fs=128 Hz
+2026-09-21 15:24:01 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:01 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:01 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:10 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:10 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12750)
+2026-09-21 15:24:10 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 11393), fs=128 Hz
+2026-09-21 15:24:10 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:10 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:10 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:20 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:20 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 11393)
+2026-09-21 15:24:20 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 10871), fs=128 Hz
+2026-09-21 15:24:20 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:20 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:20 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:27 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:27 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 10871)
+2026-09-21 15:24:27 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 9823), fs=128 Hz
+2026-09-21 15:24:27 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:27 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:27 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:33 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:33 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 9823)
+2026-09-21 15:24:33 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 10864), fs=128 Hz
+2026-09-21 15:24:33 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:33 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:33 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:40 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:40 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 10864)
+2026-09-21 15:24:40 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 10452), fs=128 Hz
+2026-09-21 15:24:40 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:40 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:40 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:24:47 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:24:47 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 10452)
+2026-09-21 15:24:47 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16769), fs=128 Hz
+2026-09-21 15:24:47 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:24:47 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:24:47 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:25:01 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:25:01 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16769)
+2026-09-21 15:25:01 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16239), fs=128 Hz
+2026-09-21 15:25:01 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:25:01 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:25:01 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:25:13 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:25:13 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16239)
+2026-09-21 15:25:13 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 7983), fs=128 Hz
+2026-09-21 15:25:13 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:25:13 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:25:13 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:25:17 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:25:17 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 7983)
+2026-09-21 15:25:17 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13883), fs=128 Hz
+2026-09-21 15:25:17 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:25:17 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:25:17 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:25:28 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:25:28 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13883)
+2026-09-21 15:25:28 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19122), fs=128 Hz
+2026-09-21 15:25:28 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:25:28 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:25:28 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:25:43 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:25:43 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19122)
+2026-09-21 15:25:43 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 19234), fs=128 Hz
+2026-09-21 15:25:43 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:25:43 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:25:43 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:25:58 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:25:58 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 19234)
+2026-09-21 15:25:58 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14282), fs=128 Hz
+2026-09-21 15:25:58 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:25:58 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:25:58 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:26:09 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:26:09 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14282)
+2026-09-21 15:26:09 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14139), fs=128 Hz
+2026-09-21 15:26:09 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:26:09 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:26:09 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:26:19 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:26:19 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14139)
+2026-09-21 15:26:19 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 14692), fs=128 Hz
+2026-09-21 15:26:19 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:26:19 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:26:19 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:26:29 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:26:29 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 14692)
+2026-09-21 15:26:29 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 13918), fs=128 Hz
+2026-09-21 15:26:29 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:26:29 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:26:29 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:26:39 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:26:39 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 13918)
+2026-09-21 15:26:39 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 16513), fs=128 Hz
+2026-09-21 15:26:39 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:26:39 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:26:39 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:26:51 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:26:51 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 16513)
+2026-09-21 15:26:51 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 12929), fs=128 Hz
+2026-09-21 15:26:51 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:26:51 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:26:51 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:26:59 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:26:59 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 12929)
+2026-09-21 15:26:59 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 17561), fs=128 Hz
+2026-09-21 15:26:59 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:26:59 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:26:59 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:27:13 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:27:13 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 17561)
+2026-09-21 15:27:13 | src.preprocessing | INFO | DS-2 preprocessing: shape=(19, 15776), fs=128 Hz
+2026-09-21 15:27:13 | src.preprocessing | INFO | Step 1: Butterworth bandpass [0.5-60.0 Hz], order=4
+2026-09-21 15:27:14 | src.preprocessing | INFO | Step 2: Notch filter at 50.0 Hz
+2026-09-21 15:27:14 | src.preprocessing | INFO | Step 3: Wavelet filtering (Coiflet-3, level 6)
+2026-09-21 15:27:26 | src.preprocessing | INFO | Step 4: SURE denoising (level 6)
+2026-09-21 15:27:26 | src.preprocessing | INFO | DS-2 preprocessing complete: shape=(19, 15776)
+2026-09-21 15:27:33 | src.segmentation | INFO | 
+==================================================
+2026-09-21 15:27:33 | src.segmentation | INFO | DS-2 SEGMENT COUNT VERIFICATION
+2026-09-21 15:27:33 | src.segmentation | INFO | ==================================================
+2026-09-21 15:27:33 | src.segmentation | INFO | Total segments: 6588 (expected 6588)
+2026-09-21 15:27:33 | src.segmentation | INFO |   ADHD: 3680 (expected 3680) ✓
+2026-09-21 15:27:33 | src.segmentation | INFO |   NC:   2908 (expected 2908) ✓
+2026-09-21 15:27:33 | src.segmentation | INFO | ✓ DS-2 segment count MATCHES paper: 6588
+2026-09-21 15:27:33 | src.segmentation | INFO | DS-2 total: 6588 segments, shape=(6588, 19, 640)
+2026-09-21 15:44:30 | Stage1 | INFO | raw DS-2 features in 4093s
+2026-09-21 15:48:34 | Stage1 | INFO | [DS1_Rest | raw_overlap50 | SEG10] seg acc=100.00%  subject vote acc=100.00% (14/14)  [242.2s]
+2026-09-21 15:54:55 | Stage1 | INFO | [DS1_Rest | raw_overlap50 | SUBJ] seg acc=66.15%  subject vote acc=64.29% (9/14)  [380.8s]
+2026-09-21 15:54:55 | Stage1 | INFO | results_summary.json <- [raw_baseline]
+2026-09-21 15:57:49 | Stage1 | INFO | [DS1_Music | raw_overlap50 | SEG10] seg acc=99.22%  subject vote acc=100.00% (14/14)  [174.1s]
+2026-09-21 16:02:22 | Stage1 | INFO | [DS1_Music | raw_overlap50 | SUBJ] seg acc=67.55%  subject vote acc=57.14% (8/14)  [273.2s]
+2026-09-21 16:02:22 | Stage1 | INFO | results_summary.json <- [raw_baseline]
+2026-09-21 16:07:38 | Stage1 | INFO | [DS1_RestMusic | raw_overlap50 | SEG10] seg acc=100.00%  subject vote acc=100.00% (14/14)  [316.1s]
+2026-09-21 16:16:36 | Stage1 | INFO | [DS1_RestMusic | raw_overlap50 | SUBJ] seg acc=67.62%  subject vote acc=64.29% (9/14)  [537.7s]
+2026-09-21 16:16:36 | Stage1 | INFO | results_summary.json <- [raw_baseline]
+2026-09-21 16:17:41 | Stage1 | INFO | [DS2 | raw_overlap50 | SEG10] seg acc=87.49%  subject vote acc=100.00% (121/121)  [18.3s]
+2026-09-21 16:17:48 | Stage1 | INFO | [DS2 | raw_overlap50 | SUBJ] seg acc=57.23%  subject vote acc=57.02% (69/121)  [7.4s]
+2026-09-21 16:17:48 | Stage1 | INFO | results_summary.json <- [raw_baseline]
+2026-09-21 16:18:02 | Stage1 | INFO | ===== part: modes =====
+2026-09-21 16:18:04 | Stage1 | INFO | figure -> results\stage1\figures\smvmd_mode_count_histogram.pdf|png
+2026-09-21 16:18:04 | Stage1 | INFO | results_summary.json <- [mode_counts]
+2026-09-21 16:18:04 | Stage1 | INFO | ===== part modes done in 2s =====
+2026-09-21 16:18:04 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 16:18:19 | Stage1 | INFO | ===== part: md =====
+2026-09-21 16:18:19 | Stage1 | INFO | ===== part md done in 0s =====
+2026-09-21 16:18:19 | Stage1 | INFO | -> results\stage1\results_summary.md
+2026-09-21 16:18:38 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Rest.pdf|png
+2026-09-21 16:18:39 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Music.pdf|png
+2026-09-21 16:18:39 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_RestMusic.pdf|png
+2026-09-21 16:18:39 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS2.pdf|png
+2026-09-21 16:34:23 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Rest.pdf|png
+2026-09-21 16:34:23 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Music.pdf|png
+2026-09-21 16:34:24 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_RestMusic.pdf|png
+2026-09-21 16:34:24 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS2.pdf|png
+2026-09-21 21:04:51 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Rest.pdf|png
+2026-09-21 21:04:52 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_Music.pdf|png
+2026-09-21 21:04:52 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS1_RestMusic.pdf|png
+2026-09-21 21:04:53 | Stage1 | INFO | figure -> results\stage1\figures\per_subject_accuracy_DS2.pdf|png

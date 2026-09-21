@@ -1,0 +1,54 @@
+# EEG-Based Multiple Neurodevelopmental Disorders Detection
+# Requirements for the reproduction implementation
+
+# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# EEG processing
+mne>=1.4.0          # MNE-Python for EEG file loading, preprocessing
+pywavelets>=1.4.1   # PyWavelets for Coiflet-3 wavelet (DS-2)
+
+# Machine learning
+scikit-learn>=1.3.0  # KNN, SVM, DT, stratified k-fold, mRMR wrapper, metrics
+scikit-optimize>=0.9.0  # Bayesian optimization (skopt)
+bayesian-optimization>=1.4.3  # Alternative Bayesian optimizer
+mrmr-selection>=0.2.6  # mRMR feature selection
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Configuration & utilities
+pyyaml>=6.0
+tqdm>=4.65.0         # Progress bars for long loops
+joblib>=1.3.0        # Parallel processing, model persistence
+h5py>=3.8.0          # Saving large arrays (segments, features)
+
+# File reading utilities
+pdfplumber>=0.9.0    # For reading the paper (dev use only)
+openpyxl>=3.1.0      # For reading .xlsx metadata (DS-1 qualitative data)
+
+# Optional: Jupyter notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
+
+# NOTES:
+# - EEGLAB preprocessing (DS-1 MODE A) requires MATLAB + EEGLAB. 
+#   This is NOT reproducible in pure Python without a MATLAB license.
+#   The CleanLine plugin and ADJUST plugin are MATLAB-only.
+#   DS-1 default mode = B (use provided preprocessed data).
+#
+# - DS-2 preprocessing IS fully reproducible in Python (scipy, pywavelets).
+#
+# - SMVMD is implemented from scratch in src/smvmd.py based on:
+#   [24] Liu & Yu, "Successive Multivariate Variational Mode Decomposition",
+#   Multidimensional Systems and Signal Processing, 2022.
+#   No existing Python SMVMD library is available; this is a custom implementation.
+#
+# - Bayesian hyperparameter optimization is done with scikit-optimize (skopt)
+#   or bayesian-optimization. The paper uses MATLAB R2023a Classification Learner.
+#   EXACT reproduction of MATLAB's internal optimizer is not possible in Python.
+#   This is documented in docs/reproducibility_notes.md.

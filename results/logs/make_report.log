@@ -1,0 +1,11 @@
+2026-09-20 23:29:56 | src.results_io | INFO | Table saved -> results\tables\summary_all_experiments.csv
+2026-09-20 23:29:56 | MakeReport | INFO | Report written -> results\final_report.md (5163 chars)
+2026-09-20 23:29:56 | MakeReport | INFO | Experiments included: DS1_Rest
+2026-09-20 23:29:56 | MakeReport | WARNING | Not yet run: DS1_Music, DS1_RestMusic, DS2
+2026-09-20 23:30:43 | src.results_io | INFO | Table saved -> results\tables\summary_all_experiments.csv
+2026-09-20 23:30:43 | MakeReport | INFO | Report written -> results\final_report.md (5443 chars)
+2026-09-20 23:30:43 | MakeReport | INFO | Experiments included: DS1_Rest
+2026-09-20 23:30:43 | MakeReport | WARNING | Not yet run: DS1_Music, DS1_RestMusic, DS2
+2026-09-21 03:39:02 | src.results_io | INFO | Table saved -> results\tables\summary_all_experiments.csv
+2026-09-21 03:39:02 | MakeReport | INFO | Report written -> results\final_report.md (12689 chars)
+2026-09-21 03:39:02 | MakeReport | INFO | Experiments included: DS1_Rest, DS1_Music, DS1_RestMusic, DS2
